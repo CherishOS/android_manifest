@@ -798,4 +798,7 @@
   <!-- Add some CherishOS repos -->
   <include name="snippets/cherish.xml" />
 
+  <!-- Add all Pixel repos -->
+  <include name="snippets/pixel.xml" />
+
 </manifest>
