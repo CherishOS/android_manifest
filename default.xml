@@ -783,5 +783,8 @@
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+  
+  <!-- Add some CherishOS repos -->
+  <include name="snippets/cherish.xml" />
 
 </manifest>
