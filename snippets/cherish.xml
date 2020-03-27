@@ -12,6 +12,10 @@
   <remote name="gitlab"
           fetch="https://gitlab.com" />
 
+  <!-- CodeAurora additions -->
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="ten" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="ten" />
+
   <!-- Framework repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="ten" />
   <project path="frameworks/base" name="android_frameworks_base" remote="ten" />
