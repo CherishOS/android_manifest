@@ -67,6 +67,7 @@
   
   <!-- External repos -->
   <project path="external/tinycompress" name="android_external_tinycompress" remote="ten" />
+  <project path="external/asus/stitchimage" name="android_external_asus_stitchimage" remote="ten" />
   <project path="external/airbnb-lottie" name="android_external_airbnb-lottie" remote="ten" />
 
   <!-- System Repos -->
