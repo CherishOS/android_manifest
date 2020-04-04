@@ -77,6 +77,7 @@
   
   <!-- External repos -->
   <project path="external/libhevc" name="external_libhevc" remote="pixel" />
+  <project path="external/libcxx" name="external_libcxx" remote="pixel" />
 
   <!-- System Repos -->
   <project path="system/apex" name="system_apex" remote="pixel" />
