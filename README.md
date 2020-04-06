@@ -25,7 +25,7 @@ Tested on Ubuntu 16.04,16.10,17.04,18.04,18.10,19.04:
 To initialize your local repository, use a command like this:
 
 ```bash
-    repo init -u git://github.com/CherishOS/android_manifest.git -b ten 
+    repo init -u https://github.com/CherishOS/android_manifest.git -b ten 
 ```
 
 Then to sync up:

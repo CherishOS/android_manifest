@@ -2,7 +2,7 @@
 <manifest>
 
   <remote name="ten"
-          fetch="https://github.com/Cherish-Future"
+          fetch="https://github.com/CherishOS"
           revision="ten" />
 
   <remote name="CherishOS-Devices"
