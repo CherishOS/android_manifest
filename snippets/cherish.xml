@@ -9,6 +9,10 @@
           fetch="https://github.com/CherishOS-Devices"
           revision="ten" />
 
+  <remote name="ten-gitlab"
+          fetch="https://gitlab.com/CherishOS"
+          revision="ten" />
+
   <remote name="gitlab"
           fetch="https://gitlab.com" />
 
@@ -69,6 +73,7 @@
   <project path="external/tinycompress" name="android_external_tinycompress" remote="ten" />
   <project path="external/asus/stitchimage" name="android_external_asus_stitchimage" remote="ten" />
   <project path="external/airbnb-lottie" name="android_external_airbnb-lottie" remote="ten" />
+  <project path="external/motorola/faceunlock" name="android_external_motorola_faceunlock" remote="ten-gitlab" />
 
   <!-- System Repos -->
   <project path="system/bt" name="android_system_bt" remote="ten" />
