@@ -81,8 +81,10 @@
   <project path="packages/apps/Traceur" name="packages_apps_Traceur" remote="pixel" />
   
   <!-- External repos -->
+  <project path="external/cldr" name="external_cldr" remote="pixel" />
   <project path="external/e2fsprogs" name="external_e2fsprogs" remote="pixel" />
   <project path="external/gptfdisk" name="external_gptfdisk" remote="pixel" />
+  <project path="external/icu" name="external_icu" remote="pixel" />
   <project path="external/libhevc" name="external_libhevc" remote="pixel" />
   <project path="external/selinux" name="external_selinux" remote="pixel" />
   <project path="external/skia" name="external_skia" remote="pixel" />
@@ -103,5 +105,6 @@
   <project path="system/extras" name="system_extras" remote="pixel" />
   <project path="system/hardware/interfaces" name="system_hardware_interfaces" remote="pixel" />
   <project path="system/keymaster" name="system_keymaster" remote="pixel" />
+  <project path="system/timezone" name="system_timezone" remote="pixel" />
   <project path="system/update_engine" name="system_update_engine" remote="pixel" />
 </manifest>
