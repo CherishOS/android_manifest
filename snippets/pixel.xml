@@ -45,7 +45,7 @@
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="pixel" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="pixel" />
   <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
-  <project path="vendor/google/customization" name="vendor_google_customization" remote="pixel" />
+  <project path="vendor/google-customization" name="vendor_google-customization" remote="pixel" />
 
   <!-- General repos -->
   <project path="build/blueprint" name="build_blueprint" remote="pixel" />
