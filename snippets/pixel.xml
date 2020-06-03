@@ -52,6 +52,7 @@
   <project path="development" name="development" remote="pixel" />
 
   <!-- Hardware repos -->
+  <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" remote="pixel" />
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="pixel" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="pixel" />
   <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="pixel" />
@@ -76,10 +77,13 @@
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="pixel" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
   <project path="packages/apps/Recorder" name="packages_apps_Recorder" remote="pixel" />
+  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="pixel" />
   <project path="packages/apps/PixelLiveWallpaper" name="packages_apps_PixelLiveWallpaper" remote="pixel-gitlab" />
   <project path="packages/apps/Snap" name="packages_apps_Snap" remote="pixel" />
+  <project path="packages/apps/Stk" name="packages_apps_Stk" remote="pixel" />
   <project path="packages/apps/Traceur" name="packages_apps_Traceur" remote="pixel" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="pixel" />
+  <project path="packages/modules/CaptivePortalLogin" name="packages_modules_CaptivePortalLogin" remote="pixel" />
   
   <!-- External repos -->
   <project path="external/cldr" name="external_cldr" remote="pixel" />
@@ -87,6 +91,7 @@
   <project path="external/gptfdisk" name="external_gptfdisk" remote="pixel" />
   <project path="external/icu" name="external_icu" remote="pixel" />
   <project path="external/libhevc" name="external_libhevc" remote="pixel" />
+  <project path="external/libtextclassifier" name="external_libtextclassifier" remote="pixel" />
   <project path="external/selinux" name="external_selinux" remote="pixel" />
   <project path="external/skia" name="external_skia" remote="pixel" />
   <project path="external/tinyalsa" name="external_tinyalsa" remote="pixel" />
