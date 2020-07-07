@@ -61,6 +61,7 @@
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ten" />
   <project path="packages/apps/Updates" name="android_packages_apps_Updates" remote="ten" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="ten" />
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="ten" />
   <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="ten" />
   <project path="packages/services/BuiltInPrintService" name="android_packages_services_BuiltInPrintService" remote="ten" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="ten" />
