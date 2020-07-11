@@ -72,6 +72,7 @@
   <project path="vendor/checkra1n" name="android_vendor_checkra1n" remote="ten" />
   
   <!-- External repos -->
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="ten" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="ten" />
   <project path="external/asus/stitchimage" name="android_external_asus_stitchimage" remote="ten" />
   <project path="external/airbnb-lottie" name="android_external_airbnb-lottie" remote="ten" />
