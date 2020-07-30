@@ -48,6 +48,7 @@
   </project>
   <project path="bootable/recovery" name="android_bootable_recovery" remote="ten" />
   <project path="device/cherish/sepolicy" name="android_device_cherish_sepolicy" remote="ten" />
+  <project path="device/mediatek/sepolicy" name="android_device_mediatek_sepolicy" remote="ten" />
   <project path="manifest" name="android_manifest" remote="ten" />
   <project path="platform_testing" name="android_platform_testing" remote="ten" />
   <project path="vendor/cherish" name="android_vendor_cherish" remote="ten" />
