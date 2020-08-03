@@ -71,6 +71,8 @@
   
   <!-- Vendor External -->
   <project path="vendor/checkra1n" name="android_vendor_checkra1n" remote="ten" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="android_vendor_qcom_opensource_bluetooth_ext" remote="cherish" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" remote="cherish" />  
   
   <!-- External repos -->
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="ten" />
