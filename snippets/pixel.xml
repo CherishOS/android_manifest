@@ -116,5 +116,4 @@
   <project path="system/hardware/interfaces" name="system_hardware_interfaces" remote="pixel" />
   <project path="system/keymaster" name="system_keymaster" remote="pixel" />
   <project path="system/timezone" name="system_timezone" remote="pixel" />
-  <project path="system/update_engine" name="system_update_engine" remote="pixel" />
 </manifest>

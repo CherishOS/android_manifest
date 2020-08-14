@@ -95,5 +95,6 @@
   <project path="system/netd" name="android_system_netd" remote="ten" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="ten" />
   <project path="system/vold" name="android_system_vold" remote="ten" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="ten" />
 
 </manifest>
