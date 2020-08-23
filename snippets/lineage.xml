@@ -73,5 +73,8 @@
   <project path="external/exfat" name="android_external_exfat" remote="lineage" />
   <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="lineage" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" />
+  
+  <!-- System Repos -->
+  <project path="system/libufdt" name="android_system_libufdt" remote="lineage" />
 
 </manifest>
