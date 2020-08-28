@@ -98,5 +98,8 @@
   <project path="system/sepolicy" name="android_system_sepolicy" remote="ten" />
   <project path="system/vold" name="android_system_vold" remote="ten" />
   <project path="system/update_engine" name="android_system_update_engine" remote="ten" />
+  
+  <!-- Clang 12 -->
+  <project path="prebuilts/clang/host/linux-x86/clang-12" name="android_prebuilts_clang_host_linux-x86_clang-12" remote="ten" clone-depth="1" />
 
 </manifest>
