@@ -91,6 +91,7 @@
   <project path="external/asus/stitchimage" name="android_external_asus_stitchimage" remote="ten" />
   <project path="external/airbnb-lottie" name="android_external_airbnb-lottie" remote="ten" />
   <project path="external/motorola/faceunlock" name="android_external_motorola_faceunlock" remote="ten-gitlab" />
+  <project path="external/pulse" name="android_external_pulse" remote="ten" />
 
   <!-- System Repos -->
   <project path="system/bt" name="android_system_bt" remote="ten" />
