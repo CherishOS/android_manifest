@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="cherish"
+          fetch="https://github.com/CherishOS"
+          revision="refs/heads/eleven" />
+
+  <remote name="CherishOS-Devices"
+          fetch="https://github.com/CherishOS-Devices"
+          revision="refs/heads/eleven" />
+
+  <remote name="eleven-gitlab"
+          fetch="https://gitlab.com/CherishOS"
+          revision="eleven" />
+		  
+   <remote  name="github/hentaiOS"
+           fetch="https://github.com/hentaiOS"
+           revision="refs/heads/Rika" />
+
+  <remote  name="gitlab/hentaiOS"
+           fetch="https://gitlab.com/hentaiOS"
+           revision="refs/heads/Rika" />
+
+  <remote  name="octavi"
+           fetch="https://github.com/Octavi-OS"
+           revision="refs/heads/11" />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com" />
+  
+  <!-- CodeAurora additions -->
+  <project path="device/cherish/sepolicy" name="android_device_cherish_sepolicy" remote="cherish" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="cherish" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" revision="eleven-legacy-um" remote="cherish" />
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="cherish" />
+
+  <!-- External repos -->
+  <project path="external/guice" name="android_external_guice" remote="cherish" />
+  <project path="external/libcxx" name="android_external_libcxx" remote="cherish" />
+  <project path="external/motorola/faceunlock" name="android_external_motorola_faceunlock" remote="eleven-gitlab" />
+  <project path="external/selinux" name="android_external_selinux" remote="cherish" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="cherish" />
+
+  <!-- Framework repos -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="cherish" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="cherish" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="cherish" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="cherish" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="cherish" />
+
+  <!-- General repos -->
+  <project path="bionic" name="android_bionic" remote="cherish" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="cherish" />
+  <project path="build/make" name="android_build" remote="cherish" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/blueprint" name="android_build_blueprint" remote="cherish" />
+  <project path="build/soong" name="android_build_soong" remote="cherish" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="manifest" name="android_manifest" remote="cherish" />
+  <project path="platform_testing" name="android_platform_testing" remote="cherish" />
+  <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
+  <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" clone-depth="1" remote="gitlab/hentaiOS" />
+
+  <!-- CAF Hals -->
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="cherish">
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- for AOSP sdm845, we override os_pickup.mk -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <!-- <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/apq8084/Android.mk" /> -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/apq8084/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8916/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8952/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8960/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8974/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8994/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+  </project>
+  <project path="hardware/qcom/sm8150/display" name="platform_hardware_qcom_sm8150_display" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/qcom/sm8150/media" name="platform_hardware_qcom_sm8150_media" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="platform_hardware_qcom_audio" remote="octavi" revision="11-caf-sm8150"/>
+  <project path="hardware/qcom-caf/sm8150/media" name="platform_hardware_qcom_media" remote="octavi" revision="11-caf-sm8150"/>
+  <project path="hardware/qcom-caf/sm8150/display" name="platform_hardware_qcom_display" remote="octavi" revision="11-caf-sm8150"/>
+
+  <!-- Hardware repos -->
+  <project path="hardware/cherish/interfaces" name="android_hardware_cherish_interfaces" remote="cherish" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="cherish" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="cherish" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="cherish" />
+
+  <!-- Packages repos -->
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="cherish" />
+  <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" remote="cherish" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cherish" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherish" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="cherish" />
+  <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="cherish" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="cherish" />
+
+  <!-- Prebuilt repos -->
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" remote="octavi" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="octavi" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="octavi" />
+  <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" clone-depth="1" remote="cherish" />
+
+  <!-- Providers repos -->
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="cherish" />
+
+  <!-- Services repos -->
+  <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="cherish" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="cherish" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="cherish" />
+
+  <!-- System repos -->
+  <project path="system/bt" name="android_system_bt" remote="cherish" />
+  <project path="system/core" name="android_system_core" remote="cherish" />
+  <project path="system/incremental_delivery" name="android_system_incremental_delivery" remote="cherish" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="cherish" />
+  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="cherish" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="cherish" />
+  <project path="system/vold" name="android_system_vold" remote="cherish" />
+
+  <!-- Tools repos -->
+  <project path="tools/metalava" name="android_tools_metalava" remote="cherish" />
+
+  <!-- Vendor repos -->
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="cherish" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" remote="cherish" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="cherish" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="cherish" />
+
+</manifest>
