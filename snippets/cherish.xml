@@ -141,6 +141,7 @@
   <project path="tools/metalava" name="android_tools_metalava" remote="cherish" />
 
   <!-- Vendor repos -->
+  <project path="vendor/themes" name="android_vendor_themes" remote="cherish" />
   <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="cherish" />
   <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" remote="cherish" />
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="cherish" />
