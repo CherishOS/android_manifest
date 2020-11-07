@@ -68,7 +68,8 @@
   <project path="manifest" name="android_manifest" remote="cherish" />
   <project path="platform_testing" name="android_platform_testing" remote="cherish" />
   <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
-  <project path="vendor/gapps" name="TeamIllusion/platform_vendor_kronicgapps" remote="gitlab" revision="eleven" />
+  <project path="vendor/google/gms" name="vendor_google_gms" remote="eleven-gitlab" revision="eleven" />
+  <project path="vendor/google/pixel" name="vendor_google_pixel" remote="eleven-gitlab" revision="eleven" />
 
   <project path="hardware/qcom/sm8150/display" name="platform_hardware_qcom_sm8150_display" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm8150/media" name="platform_hardware_qcom_sm8150_media" groups="pdk" remote="github/hentaiOS" />
