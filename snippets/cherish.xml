@@ -72,6 +72,9 @@
   <project path="vendor/google/gms" name="vendor_google_gms" remote="eleven-gitlab" revision="eleven" />
   <project path="vendor/google/pixel" name="vendor_google_pixel" remote="eleven-gitlab" revision="eleven" />
 
+  <project path="hardware/qcom/sm7150/media" name="platform_hardware_qcom_sm7150_media" groups="pdk" remote="github/hentaiOS" revision="queenslave" />
+  <project path="hardware/qcom/sm7250/gps" name="platform_hardware_qcom_sm7250_gps" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/qcom/sm7250/media" name="platform_hardware_qcom_sm7250_media" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm8150/display" name="platform_hardware_qcom_sm8150_display" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm8150/media" name="platform_hardware_qcom_sm8150_media" groups="pdk" remote="github/hentaiOS" />
 
