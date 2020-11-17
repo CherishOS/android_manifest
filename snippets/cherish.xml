@@ -90,6 +90,7 @@
   <!-- Packages repos -->
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="cherish" />
   <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" remote="cherish" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="cherish" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cherish" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherish" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="cherish" />
