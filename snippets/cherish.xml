@@ -39,6 +39,7 @@
   <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="cherish" />
 
   <!-- External repos -->
+  <project path="external/airbnb-lottie" name="android_external_airbnb-lottie" remote="cherish" />
   <project path="external/guice" name="android_external_guice" remote="cherish" />
   <project path="external/libcxx" name="android_external_libcxx" remote="cherish" />
   <project path="external/motorola/faceunlock" name="android_external_motorola_faceunlock" remote="eleven-gitlab" />
