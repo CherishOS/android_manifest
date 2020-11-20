@@ -92,7 +92,8 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="lineage" clone-depth="1" />
 
   <!-- Packages repos -->
-  <!--project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="lineage" />-->
+  <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="lineage" />
+  <project path="packages/apps/Seedvault" name="android_packages_apps_Seedvault" remote="lineage" />
   <project path="packages/apps/Jelly" name="android_packages_apps_Jelly" remote="lineage" />
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
 
@@ -109,4 +110,5 @@
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="lineage" />
   <project path="vendor/qcom/opensource/fm-commonsys" name="android_vendor_qcom_opensource_fm-commonsys" remote="lineage" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="lineage" />
+  <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" remote="lineage" />
 </manifest>
