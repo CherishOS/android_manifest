@@ -31,6 +31,7 @@
   <!-- CodeAurora additions -->
   <project path="device/cherish/sepolicy" name="android_device_cherish_sepolicy" remote="cherish" />
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="cherish" />
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" revision="eleven-legacy" remote="cherish" />
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" revision="eleven-legacy-um" remote="cherish" />
   <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="cherish" />
 
