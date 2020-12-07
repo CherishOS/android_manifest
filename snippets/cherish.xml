@@ -115,6 +115,7 @@
   <project path="system/bt" name="android_system_bt" remote="cherish" />
   <project path="system/core" name="android_system_core" remote="cherish" />
   <project path="system/incremental_delivery" name="android_system_incremental_delivery" remote="cherish" />
+  <project path="system/netd" name="android_system_netd" remote="cherish" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="cherish" />
   <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="cherish" />
   <project path="system/update_engine" name="android_system_update_engine" remote="cherish" />
