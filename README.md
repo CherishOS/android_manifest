@@ -36,11 +36,9 @@ Alright, so now we’re getting there. I have outlined the basics of what we’r
  ```
 
 ##### Giving the repo binary the proper permissions
-
-    ```bash
+```bash 
     chmod a+x ~/bin/repo
-    ```
-      
+ ```     
 To initialize your local repository, use a command like this:
 
 ```bash
