@@ -46,6 +46,7 @@
   <!-- Framework repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="cherish" />
   <project path="frameworks/base" name="android_frameworks_base" remote="cherish" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="cherish" />
   <project path="frameworks/native" name="android_frameworks_native" remote="cherish" />
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="cherish" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="cherish" />
