@@ -72,6 +72,8 @@
   <project path="platform_testing" name="android_platform_testing" remote="cherish" />
   <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
   <project path="vendor/gms" name="vendor_gapps" groups="vendor" clone-depth="1" remote="eleven-gitlab" />
+  <project path="vendor/pixelstyle" name="android_vendor_pixelstyle" remote="cherish" />
+ 
   <project path="hardware/qcom/sm7150/media" name="platform_hardware_qcom_sm7150_media" groups="pdk" remote="github/hentaiOS" revision="queenslave" />
   <project path="hardware/qcom/sm7250/gps" name="platform_hardware_qcom_sm7250_gps" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm7250/media" name="platform_hardware_qcom_sm7250_media" groups="pdk" remote="github/hentaiOS" />
