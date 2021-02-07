@@ -37,6 +37,7 @@
 
   <!-- External repos -->
   <project path="external/airbnb-lottie" name="android_external_airbnb-lottie" remote="cherish" />
+  <project path="external/asus/stitchimage" name="android_external_asus_stitchimage" remote="cherish" />
   <project path="external/guice" name="android_external_guice" remote="cherish" />
   <project path="external/libcxx" name="android_external_libcxx" remote="cherish" />
   <project path="external/motorola/faceunlock" name="android_external_motorola_faceunlock" remote="eleven-gitlab" />
