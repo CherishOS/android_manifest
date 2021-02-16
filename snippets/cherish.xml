@@ -71,7 +71,7 @@
   </project>
   <project path="manifest" name="android_manifest" remote="cherish" />
   <project path="platform_testing" name="android_platform_testing" remote="cherish" />
-  <project path="vendor/cherish" name="android_vendor_cherish" revision="Hi" remote="cherish" />
+  <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
   <project path="vendor/google/gms" name="AOSPA/android_vendor_google_gms" remote="gitlab" revision="ruby" />
   <project path="vendor/google/pixel" name="vendor_google_pixel" remote="eleven-gitlab" revision="eleven" />
  
