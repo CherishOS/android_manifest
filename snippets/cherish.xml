@@ -113,6 +113,7 @@
 
   <!-- Providers repos -->
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="cherish" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="cherish" />
 
   <!-- Services repos -->
   <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="cherish" />
