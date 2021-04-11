@@ -70,6 +70,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="libcore" name="android_libcore" remote="cherish" />
   <project path="manifest" name="android_manifest" remote="cherish" />
   <project path="platform_testing" name="android_platform_testing" remote="cherish" />
   <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
