@@ -103,7 +103,7 @@
   <project path="packages/apps/PotatoPlugins" name="android_packages_apps_PotatoPlugins" remote="cherish" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherish" />
   <project path="packages/apps/SimpleDeviceConfig" name="android_packages_apps_SimpleDeviceConfig" remote="cherish" />
-  <project path="packages/apps/SettingsIntelligenceAOSP" name="android_packages_apps_SettingsIntelligence" remote="cherish" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="cherish" />
   <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="cherish" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="cherish" />
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="cherish" />
