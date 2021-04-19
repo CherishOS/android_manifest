@@ -141,7 +141,6 @@
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="cherish" />
   <project path="vendor/themes" name="android_vendor_themes" remote="cherish" />
   <project path="vendor/oplauncher" name="android_vendor_oplauncher" remote="cherish" />
-  <project path="vendor/opfilemanager" name="android_vendor_opfilemanager" remote="cherish" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="cherish" />
   <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="android_vendor_qcom_opensource_bluetooth_ext" remote="cherish" />
   <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_commonsys_packages_apps_Bluetooth" remote="cherish" />
