@@ -62,3 +62,8 @@ From root directory of Project, perform following commands in terminal
  brunch device-codename
 ```
 -----------------------------------------------------------------------------
+Apply for Official Maintainership
+====================
+You can apply for officialy maintaining the ROM for your device.
+
+https://forms.gle/BWg1mPxHNv2W8eK79
