@@ -6,6 +6,12 @@ To get started with the building process, you'll need to get familiar with [Git 
 Install the build packages:
 ===============
 
+Install JDK 8:
+
+```bash
+ sudo apt install openjdk-8-jdk
+```
+
 Tested on Ubuntu 16.04,16.10,17.04,18.04,18.10,19.04,21.04:
 
 ```bash
