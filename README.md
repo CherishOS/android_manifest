@@ -1,3 +1,14 @@
+Credits:
+=======
+ * [**AOSP**](https://android.googlesource.com)
+ * [**LineageOS**](https://github.com/LineageOS)
+ * [**Nitrogen-Project**](https://github.com/nitrogen-project)
+ * [**DotOS**](https://github.com/DotOS)
+ * [**PixelExperience**](https://github.com/PixelExperience)
+ * [**ABC Rom**](https://github.com/ezio84)
+ * [**Descendant**](https://github.com/Descendant-XI)
+----------------------------------------------------------------------------
+
 Getting Started:
 ==============
 
