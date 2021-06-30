@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  
+  <remote name="github"
+          fetch="https://github.com" />
 
   <remote name="cherish"
           fetch="https://github.com/CherishOS"
