@@ -83,6 +83,41 @@ From root directory of Project, perform following commands in terminal
  brunch device-codename
 ```
 -----------------------------------------------------------------------------
+
+Important for FOD devices
+====================
+ 
+### Also set this flag in device tree cherish_device.mk 
+```bash
+# FOD animations
+TARGET_WANTS_FOD_ANIMATIONS := true
+```
+
+### Add it in overlay/frameworks/base/core/res/res/values/config.xml 
+```bash
+<!-- Show a custom view for FOD -->
+<bool name="config_needCustomFODView">true</bool>
+```
+
+### Support FOD fingerprint when screen is turned of
+```bash
+<!-- Whether device supports in-display fingerprint when screen is turned off -->
+    <bool name="config_supportsScreenOffInDisplayFingerprint">true</bool>
+```
+
+Battery Health
+====================
+### Add overlay/packages/apps/Settings/res/values/config.xml
+```bash
+<!-- Battery Health enable -->
+<bool name="config_supportBatteryHealth">true</bool>
+
+	<!-- Battery Health -->
+  <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
+  <string name="config_batCurCap">/sys/class/power_supply/bms/charge_counter</string>
+  <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
+```
+
 Apply for Official Maintainership
 ====================
 You can apply for officialy maintaining the ROM for your device.
