@@ -118,6 +118,12 @@ Battery Health
   <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
 ```
 
+### Add sepolicy/vendor/system_app.te
+```bash
+# allow system apps to read battery status
+r_dir_file(system_app, sysfs_battery_supply)
+```
+
 Apply for Official Maintainership
 ====================
 You can apply for officialy maintaining the ROM for your device.
