@@ -144,7 +144,7 @@
 
   <!-- Vendor repos -->
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="cherish" />
-  <project path="vendor/themes" name="android_vendor_themes" remote="cherish" />
+  <project path="vendor/themes" name="android_vendor_themes" revision="test" remote="cherish" />
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="cherish" />
   <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="cherish" />
 
