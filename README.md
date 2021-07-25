@@ -84,6 +84,15 @@ From root directory of Project, perform following commands in terminal
 ```
 -----------------------------------------------------------------------------
 
+Important for Smart Pixel AOD
+====================
+ 
+### Add it in overlay/frameworks/base/core/res/res/values/config.xml
+```bash
+<!-- Whether the device supports Smart Pixels -->
+<bool name="config_enableSmartPixels">true</bool>
+```
+
 Important for FOD devices
 ====================
  
