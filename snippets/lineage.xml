@@ -135,6 +135,7 @@
   <project path="system/libufdt" name="android_system_libufdt" groups="pdk" remote="lineage" />
   <project path="system/media" name="android_system_media" remote="lineage" />
   <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="lineage" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="lineage" />
 
   <!-- Vendor repos -->
   <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="lineage" />
