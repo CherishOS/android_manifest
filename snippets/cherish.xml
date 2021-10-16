@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Github -->
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <!-- GitHub -->
+  <remote  name="cherish"
+           fetch="https://github.com/CherishOS/"
+           revision="twelve" />
+
+  <!-- GitLab -->
+  <remote  name="gitlab"
+           revision="twelve"
+           fetch="https://gitlab.com/CherishOS" />
+
+  <!-- Rootdir -->
+  <project path="bionic" name="android_bionic" groups="pdk" remote="cherish" />
+  <project path="libcore" name="android_libcore" groups="pdk" remote="cherish" />
+  <project path="manifest" name="android_manifest" remote="cherish" />
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="cherish" />
+
+  <!-- Build -->
+  <project path="build/make" name="android_build" groups="pdk" remote="cherish" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="cherish" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <project path="device/cherish/sepolicy" name="android_device_cherish_sepolicy" remote="cherish" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="cherish" />
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="cherish" />
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy" remote="cherish" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy-um" remote="cherish" />
+
+  <!-- External -->
+  <project path="external/colorkt" name="android_external_colorkt" groups="pdk" remote="cherish" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="cherish" />
+  <project path="external/gptfdisk" name="android_external_gptfdisk" groups="pdk" remote="cherish" />
+  <project path="external/mksh" name="android_external_mksh" groups="pdk" remote="cherish" />
+  <project path="external/selinux" name="android_external_selinux" groups="pdk" remote="cherish" />
+  <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="cherish" />
+  <project path="external/themelib" name="android_external_themelib" groups="pdk" remote="cherish" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="cherish" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="cherish" />
+  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="cherish" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="cherish" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="cherish" />
+
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="cherish" />
+  <project path="hardware/cherish/interfaces" name="android_hardware_cherish_interfaces" remote="cherish" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="cherish" />
+  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" revision="twelve-caf-msm8998" remote="cherish" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="twelve-caf-msm8998" remote="cherish" />
+  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" revision="twelve-caf-msm8998" remote="cherish" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" revision="twelve-caf" remote="cherish" />
+
+  <!-- Packages -->
+  <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" remote="cherish" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherish" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="cherish" />
+  <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="cherish" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="cherish" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="cherish" />
+  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="cherish" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="cherish" />
+  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="cherish" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="cherish" />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="cherish" />
+  <project path="packages/modules/adb" name="android_packages_modules_adb" groups="pdk" remote="cherish" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="cherish" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="cherish" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="cherish" />
+
+  <!-- System -->
+  <project path="system/core" name="android_system_core" groups="pdk" remote="cherish" />
+  <project path="system/logging" name="android_system_logging" groups="pdk" remote="cherish" />
+  <project path="system/netd" name="android_system_netd" remote="cherish" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="cherish" />
+  <project path="system/vold" name="android_system_vold" groups="pdk" remote="cherish" />
+
+  <!-- Vendor -->
+  <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="cherish" />
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="cherish" />
+  <project path="vendor/gms" name="android_vendor_gms" remote="gitlab" clone-depth="1" />
+
+</manifest>
