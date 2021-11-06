@@ -14,6 +14,11 @@
   <remote  name="gitlab"
            revision="twelve"
            fetch="https://gitlab.com/CherishOS" />
+		   
+  <remote  name="arrow"
+           fetch="https://github.com/ArrowOS"
+           review="https://review.arrowos.net/"
+           revision="refs/heads/arrow-12.0" />
 
   <!-- Rootdir -->
   <project path="bionic" name="android_bionic" groups="pdk" remote="cherish" />
@@ -76,6 +81,7 @@
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="cherish" />
   <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="cherish" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="cherish" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cherish" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="cherish" />
   <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="cherish" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="cherish" />
@@ -100,5 +106,8 @@
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="cherish" />
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="cherish" />
   <project path="vendor/gms" name="android_vendor_gms" remote="gitlab" clone-depth="1" />
-
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="arrow" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="arrow" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="arrow" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="arrow" />
 </manifest>
