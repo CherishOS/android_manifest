@@ -98,6 +98,7 @@
   <project path="hardware/qcom/sm7250/media" name="LineageOS/android_hardware_qcom_sm7250_media" groups="qcom_sm7250" remote="LineageOS" />
   <project path="hardware/qcom-caf/thermal" name="LineageOS/android_hardware_qcom_thermal" groups="qcom,pdk-qcom" remote="LineageOS" />
   <project path="hardware/qcom-caf/vr" name="LineageOS/android_hardware_qcom_vr" groups="qcom,pdk-qcom" remote="LineageOS" />
+  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" groups="qcom,qcom_audio,pdk-qcom" remote="LineageOS" />
 
   <!-- Packages -->
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="LineageOS" />
