@@ -105,6 +105,7 @@
   <remove-project name="platform/hardware/qcom/sm7250/gps" />
 
   <!-- Packages -->
+  <remove-project name="platform/packages/apps/Bluetooth" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <remove-project name="platform/packages/apps/Launcher3" />
@@ -129,6 +130,7 @@
   <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
 
   <!-- System -->
+  <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/logging" />
   <remove-project name="platform/system/libhwbinder" />
