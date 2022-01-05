@@ -84,6 +84,7 @@
   <project path="hardware/qcom-caf/sm8250/audio" name="android_hardware_qcom_audio" revision="twelve-caf-sm8250" remote="cherish" />
   <project path="hardware/qcom-caf/sm8250/display" name="android_hardware_qcom_display" revision="twelve-caf-sm8250" remote="cherish" />
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" revision="twelve-caf" remote="cherish" />
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="cherish" />
 
   <!-- Packages -->
   <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" remote="cherish" />
