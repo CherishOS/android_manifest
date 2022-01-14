@@ -10,6 +10,7 @@
   <project path="external/ant-wireless/ant_native" name="LineageOS/android_external_ant-wireless_ant_native" remote="LineageOS" />
   <project path="external/ant-wireless/ant_service" name="LineageOS/android_external_ant-wireless_ant_service" remote="LineageOS" />
   <project path="external/ant-wireless/hidl" name="LineageOS/android_external_ant-wireless_hidl" remote="LineageOS" />
+  <project path="external/ant-wireless/antradio-library" name="LineageOS/android_external_ant-wireless_antradio-library" remote="LineageOS" />
   <!--<project path="external/connectivity" name="LineageOS/android_external_connectivity" remote="LineageOS" />-->
   <project path="external/exfatprogs" name="LineageOS/android_external_exfatprogs" groups="pdk" remote="LineageOS" />
   <project path="external/json-c" name="LineageOS/android_external_json-c" groups="qcom,pdk-qcom" remote="LineageOS" />
