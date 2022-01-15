@@ -62,6 +62,7 @@
   <!-- External -->
   <project path="external/colorkt" name="android_external_colorkt" groups="pdk" remote="cherish" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="cherish" />
+  <project path="external/fastrpc" name="android_external_fastrpc" remote="cherish" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" groups="pdk" remote="cherish" />
   <project path="external/mksh" name="android_external_mksh" groups="pdk" remote="cherish" />
   <project path="external/selinux" name="android_external_selinux" groups="pdk" remote="cherish" />
