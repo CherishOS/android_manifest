@@ -8,6 +8,10 @@
            remote="aosp"
            sync-j="4" />
 
+     <remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="twelve"/>
+
   <superproject name="platform/superproject" remote="aosp" revision="android-12.0.0_r27" />
   <contactinfo bugurl="go/repo-bug" />
 
