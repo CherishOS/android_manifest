@@ -105,6 +105,7 @@
   <project path="system/logging" name="android_system_logging" groups="pdk" remote="cherish" />
   <project path="system/libhwbinder" name="android_system_libhwbinder" remote="cherish" />
   <project path="system/netd" name="android_system_netd" remote="cherish" />
+  <project path="system/security" name="android_system_security" remote="cherish" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="cherish" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="cherish" />
 
