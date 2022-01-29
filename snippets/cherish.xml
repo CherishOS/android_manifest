@@ -15,8 +15,8 @@
            revision="twelve"
            fetch="https://gitlab.com/CherishOS" />
 		   
-   <remote name="pixel-gitlab"
-          fetch="https://gitlab.com/PixelExperience"
+   <remote name="hungphan2001-gitlab"
+          fetch="https://gitlab.com/hungphan2001"
           revision="twelve" />
 		   
   <remote  name="arrow"
@@ -114,7 +114,7 @@
   <!-- Vendor -->
   <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="cherish" />
-  <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
+  <project path="vendor/gapps" name="android_vendor_gapps" remote="hungphan2001-gitlab" clone-depth="1" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="pixel" />
   <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" remote="pixel" />
   <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="pixel" />
