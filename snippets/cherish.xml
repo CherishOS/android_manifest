@@ -58,6 +58,7 @@
   <!-- External -->
   <project path="external/colorkt" name="android_external_colorkt" groups="pdk" remote="cherish" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="cherish" />
+  <project path="external/faceunlock" name="android_external_faceunlock" remote="hungphan2001-gitlab" />
   <project path="external/fastrpc" name="android_external_fastrpc" remote="cherish" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" groups="pdk" remote="cherish" />
   <project path="external/mksh" name="android_external_mksh" groups="pdk" remote="cherish" />
@@ -86,6 +87,7 @@
   <!-- Packages -->
   <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" remote="cherish" />
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="cherish" />
+  <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="cherish" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherish" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="cherish" />
   <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="cherish" />
