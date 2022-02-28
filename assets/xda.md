@@ -1,4 +1,4 @@
-[IMG]https://raw.githubusercontent.com/karthik558/android_manifest/twelve/cherish.png[/IMG]
+[CENTER][IMG]https://raw.githubusercontent.com/CherishOS/android_manifest/twelve/assets/cherish.png[/IMG]
 
 CherishOS is an AOSP based rom focusing on Unique and Smooth UI with handy features. CherishOS is a reborn of pie based Dot-ExtendedOS.
 [CODE]
@@ -23,7 +23,7 @@ CherishOS is an AOSP based rom focusing on Unique and Smooth UI with handy featu
 
 [SIZE=5][B][URL='downloads.cherishos.com']Download ROM[/URL][/B][/SIZE]
 
-[IMG]https://raw.githubusercontent.com/karthik558/android_manifest/twelve/credits.png[/IMG]
+[IMG]https://raw.githubusercontent.com/CherishOS/android_manifest/twelve/assets/credits.png[/IMG]
 
 [SIZE=4][FONT=Verdana]-Lineage OS
 -AOSP
@@ -52,13 +52,13 @@ Sound / vibration[/SIZE]
 [SIZE=4][B][COLOR=#1a73e8]Known issues[/COLOR][/B][/SIZE]
 [SIZE=3]You tell me (none)[/SIZE]
 
-[IMG]https://raw.githubusercontent.com/karthik558/android_manifest/twelve/source.png[/IMG]
+[IMG]https://raw.githubusercontent.com/CherishOS/android_manifest/twelve/assets/source.png[/IMG]
 [URL='https://github.com/CherishOS'][SIZE=5][B]Cherish-OS Source[/B][/SIZE][/URL]
 
 [SIZE=5][B][URL='https://github.com/karthik558/MsM-4.14-SmoothAF']Kernel Source[/URL]
 [URL='https://t.me/CherishOS_Chat']Telegram Group[/URL][/B][/SIZE]
 
-[U][B][SIZE=4][FONT=Verdana][COLOR=#e34036]REPORTING BUGS[/COLOR][/FONT]![/SIZE][/B][/U]
+[U][B][SIZE=4][FONT=Verdana][COLOR=#e34036]REPORTING BUGS ![/COLOR][/FONT][/SIZE][/B][/U]
 As soon as the problem occurs, take a logcat!
 [URL='http://telegra.ph/Logcats-are-important-03-01']for more READ THIS[/URL][/CENTER]
 
@@ -74,9 +74,9 @@ As soon as the problem occurs, take a logcat!
 [B]Android OS version:[/B] 12
 [B]Security patch level:[/B] November 2021
 [B]Build author:[/B]
-[URL='https://forum.xda-developers.com/member.php?u=9081061[/url'][B]ROM Developer:[/B] Hungphan2001[/URL]
-[URL='https://forum.xda-developers.com/member.php?u=9081061[/url'][B][U]Version Information[/U][/B][/URL]
-[URL='https://forum.xda-developers.com/member.php?u=9081061[/url'][B]Status:[/B] Stable[/URL]
-[URL='https://forum.xda-developers.com/member.php?u=9081061[/url'][B]Current Stable Version:[/B] 3[/URL].0
-[URL='https://forum.xda-developers.com/member.php?u=9081061[/url'][B]SELinux Status:[/B] Enforcing[/URL]
-[URL='https://forum.xda-developers.com/member.php?u=9081061[/url'][B]Release Date:[/B] 2021-11-1[/QUOTE][/URL]
+[B]ROM Developer:[/B][URL='https://forum.xda-developers.com/member.php?u=9081061[/url'] Hungphan2001[/URL]
+[QUOTE][B][U]Version Information[/U][/B]
+[B]Status:[/B] Stable
+[B]Current Stable Version:[/B] 3.0
+[B]SELinux Status:[/B] Enforcing
+[B]Release Date:[/B] 2021-11-1[/QUOTE]
