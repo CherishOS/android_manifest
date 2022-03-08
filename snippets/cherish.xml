@@ -62,6 +62,7 @@
   <project path="external/faceunlock" name="android_external_faceunlock" remote="hungphan2001-gitlab" />
   <project path="external/fastrpc" name="android_external_fastrpc" remote="cherish" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" groups="pdk" remote="cherish" />
+  <project path="external/libcxx" name="android_external_libcxx" remote="cherish" />
   <project path="external/mksh" name="android_external_mksh" groups="pdk" remote="cherish" />
   <project path="external/selinux" name="android_external_selinux" groups="pdk" remote="cherish" />
   <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="cherish" />
