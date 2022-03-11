@@ -26,15 +26,15 @@
 
   <!-- Rootdir -->
   <project path="art" name="android_art" remote="cherish" />
-  <project path="bionic" name="android_bionic" groups="pdk" remote="cherish" />
+  <project path="bionic" name="android_bionic" groups="pdk" revision="twelve-one" remote="cherish" />
   <project path="libcore" name="android_libcore" groups="pdk" remote="cherish" />
-  <project path="manifest" name="android_manifest" remote="cherish" />
+  <project path="manifest" name="android_manifest" groups="pdk" revision="twelve-one" remote="cherish" />
 
   <!-- Bootable -->
-  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="cherish" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" revision="twelve-one" remote="cherish" />
 
   <!-- Build -->
-  <project path="build/make" name="android_build" groups="pdk" remote="cherish" >
+  <project path="build/make" name="android_build" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -43,7 +43,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="cherish" >
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" revision="twelve-one" remote="cherish" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -56,29 +56,26 @@
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy-um" remote="cherish" />
 
   <!-- External -->
-  <project path="external/AndroidSystemBlur" name="android_external_AndroidSystemBlur" remote="cherish" />
-  <project path="external/colorkt" name="android_external_colorkt" groups="pdk" remote="cherish" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="cherish" />
   <project path="external/faceunlock" name="android_external_faceunlock" remote="hungphan2001-gitlab" />
   <project path="external/fastrpc" name="android_external_fastrpc" remote="cherish" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" groups="pdk" remote="cherish" />
   <project path="external/libcxx" name="android_external_libcxx" remote="cherish" />
   <project path="external/mksh" name="android_external_mksh" groups="pdk" remote="cherish" />
-  <project path="external/selinux" name="android_external_selinux" groups="pdk" remote="cherish" />
+  <project path="external/selinux" name="android_external_selinux" remote="cherish" />
   <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="cherish" />
-  <project path="external/themelib" name="android_external_themelib" groups="pdk" remote="cherish" />
 
   <!-- Frameworks -->
-  <project path="frameworks/av" name="android_frameworks_av" remote="cherish" />
-  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="cherish" />
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
   <project path="frameworks/libs/net" name="android_frameworks_libs_net" remote="cherish" />
-  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="cherish" />
-  <project path="frameworks/native" name="android_frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="cherish" />
-  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="cherish" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="cherish" />
+  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
 
   <!-- Hardware -->
-  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="cherish" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
   <project path="hardware/cherish/interfaces" name="android_hardware_cherish_interfaces" remote="cherish" />
   <project path="hardware/qcom-caf/sm8250/audio" name="hardware_qcom-caf_sm8250_audio" remote="pixel" />
   <project path="hardware/qcom-caf/sm8250/display" name="hardware_qcom-caf_sm8250_display" remote="pixel" />
@@ -89,34 +86,34 @@
 
   <!-- Packages -->
   <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" remote="cherish" />
-  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="cherish" />
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
   <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="cherish" />
   <project path="packages/apps/GamingMode" name="android_packages_apps_GamingMode" remote="cherish" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherish" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="cherish" />
   <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="cherish" />
-  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cherish" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
   <project path="packages/apps/RepainterServicePriv" name="android_packages_apps_RepainterServicePriv" remote="cherish" />
   <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="cherish" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="cherish" />
   <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="cherish" />
   <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="cherish" />
-  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="cherish" />
-  <project path="packages/modules/adb" name="android_packages_modules_adb" groups="pdk" remote="cherish" />
-  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="cherish" />
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="cherish" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="cherish" />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
+  <project path="packages/modules/adb" name="android_packages_modules_adb" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
 
   <!-- System -->
-  <project path="system/bt" name="android_system_bt" groups="pdk" remote="cherish" />
-  <project path="system/core" name="android_system_core" groups="pdk" remote="cherish" />
-  <project path="system/logging" name="android_system_logging" groups="pdk" remote="cherish" />
+  <project path="system/bt" name="android_system_bt" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
+  <project path="system/core" name="android_system_core" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
+  <project path="system/logging" name="android_system_logging" remote="cherish" />
   <project path="system/libhwbinder" name="android_system_libhwbinder" remote="cherish" />
   <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="cherish" />
   <project path="system/netd" name="android_system_netd" remote="cherish" />
-  <project path="system/security" name="android_system_security" remote="cherish" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="cherish" />
-  <project path="system/vold" name="android_system_vold" groups="pdk" remote="cherish" />
+  <project path="system/security" name="android_system_security" revision="twelve-one" remote="cherish" />
+  <project path="system/sepolicy" name="android_system_sepolicy" revision="twelve-one" remote="cherish" />
+  <project path="system/vold" name="android_system_vold" groups="pdk" revision="twelve-one" remote="cherish" />
 
   <!-- Vendor -->
   <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
@@ -124,15 +121,15 @@
   <project path="vendor/gapps" name="android_vendor_gapps" remote="hungphan2001-gitlab" clone-depth="1" />
   <project path="vendor/lawnicons" name="android_vendor_lawnicons" remote="cherish" />
   <project path="vendor/lawnchair" name="android_vendor_lawnchair" remote="cherish" />
-  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="pixel" />
+  <!-- <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="pixel" /> -->
   <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" remote="pixel" />
   <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="pixel" />
   <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="cherish" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="android_vendor_qcom_opensource_audio-hal_st-hal" remote="cherish" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom_opensource_commonsys-intf_bluetooth" remote="cherish" />
-  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="android_vendor_qcom_opensource_commonsys_bluetooth_ext" remote="cherish" />
-  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_commonsys_packages_apps_Bluetooth" remote="cherish" />
-  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_commonsys_system_bt" remote="cherish" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="android_vendor_qcom_opensource_commonsys_bluetooth_ext" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_commonsys_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_commonsys_system_bt" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
   <project path="vendor/qcom/opensource/fm-commonsys" name="android_vendor_qcom_opensource_fm-commonsys" remote="cherish" />
   <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="cherish" />
   <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="arrow" />
