@@ -111,6 +111,7 @@
   <project path="system/netd" name="android_system_netd" remote="cherish" />
   <project path="system/security" name="android_system_security" revision="twelve-one" remote="cherish" />
   <project path="system/sepolicy" name="android_system_sepolicy" revision="twelve-one" remote="cherish" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="cherish" />
   <project path="system/vold" name="android_system_vold" groups="pdk" revision="twelve-one" remote="cherish" />
 
   <!-- Vendor -->
