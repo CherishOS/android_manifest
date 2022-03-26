@@ -108,7 +108,7 @@
   <project path="system/bt" name="android_system_bt" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
   <project path="system/core" name="android_system_core" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
   <project path="system/logging" name="android_system_logging" remote="cherish" />
-  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="cherish" />
+  <project path="system/libhwbinder" name="android_system_libhwbinder" revision="twelve-one" remote="cherish" />
   <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="cherish" />
   <project path="system/netd" name="android_system_netd" remote="cherish" />
   <project path="system/security" name="android_system_security" revision="twelve-one" remote="cherish" />
