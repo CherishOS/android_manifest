@@ -56,7 +56,6 @@
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy-um" remote="cherish" />
 
   <!-- External -->
-  <project path="external/colorkt" name="android_external_colorkt" groups="pdk" remote="cherish" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="cherish" />
   <project path="external/faceunlock" name="android_external_faceunlock" remote="hungphan2001-gitlab" />
   <project path="external/fastrpc" name="android_external_fastrpc" remote="cherish" />
@@ -65,7 +64,6 @@
   <project path="external/mksh" name="android_external_mksh" groups="pdk" remote="cherish" />
   <project path="external/selinux" name="android_external_selinux" remote="cherish" />
   <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="cherish" />
-  <project path="external/themelib" name="android_external_themelib" groups="pdk" remote="cherish" />
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk-cw-fs,pdk-fs" revision="twelve-one" remote="cherish" />
