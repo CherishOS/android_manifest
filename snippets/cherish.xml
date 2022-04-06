@@ -119,7 +119,6 @@
 
   <!-- Vendor -->
   <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
-  <project path="vendor/PixelMod" name="android_vendor_PixelMod" remote="cherish" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="cherish" />
   <project path="vendor/gapps" name="android_vendor_gapps" remote="hungphan2001-gitlab" clone-depth="1" />
   <project path="vendor/lawnicons" name="android_vendor_lawnicons" revision="twelve" remote="cherish" />
