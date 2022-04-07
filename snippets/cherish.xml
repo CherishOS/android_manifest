@@ -12,12 +12,12 @@
 
   <!-- GitLab -->
   <remote  name="gitlab"
-           revision="twelve-one"
+           revision="twelve"
            fetch="https://gitlab.com/CherishOS" />
 		   
    <remote name="hungphan2001-gitlab"
           fetch="https://gitlab.com/hungphan2001"
-          revision="twelve" />
+          revision="twelve-one" />
 		   
   <remote  name="arrow"
            fetch="https://github.com/ArrowOS"
