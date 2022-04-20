@@ -56,6 +56,7 @@
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy-um" remote="cherish" />
 
   <!-- External -->
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="cherish"/>
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="cherish" />
   <project path="external/colorkt" name="android_external_colorkt" groups="pdk" revision="twelve" remote="cherish" />
   <project path="external/faceunlock" name="android_external_faceunlock" remote="hungphan2001-gitlab" />
