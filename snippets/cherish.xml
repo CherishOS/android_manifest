@@ -117,6 +117,7 @@
   <project path="system/logging" name="android_system_logging" remote="cherish" />
   <project path="system/libhwbinder" name="android_system_libhwbinder" remote="cherish" />
   <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="cherish" />
+  <project path="system/netd" name="android_system_netd" remote="cherish" />
   <project path="system/security" name="android_system_security" remote="cherish" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="cherish" />
   <project path="system/update_engine" name="android_system_update_engine" remote="cherish" />
