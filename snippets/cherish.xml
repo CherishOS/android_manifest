@@ -49,7 +49,7 @@
   </project>
 
   <!-- Device -->
-  <project path="device/cherish/sepolicy" name="android_device_cherish_sepolicy" revision="twelve" remote="cherish" />
+  <project path="device/cherish/sepolicy" name="android_device_cherish_sepolicy" remote="cherish" />
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" revision="twelve" remote="cherish" />
   <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" revision="twelve" remote="cherish" />
   <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy" remote="cherish" />
