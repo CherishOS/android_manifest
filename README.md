@@ -74,6 +74,61 @@ From root directory of Project, perform following commands in terminal
 . build/envsetup.sh
  brunch device-codename
 ```
+ -----------------------------------------------------------------------------
+
+Important for Smart Pixel AOD
+====================
+ 
+### Add it in overlay/frameworks/base/core/res/res/values/config.xml
+```bash
+<!-- Whether the device supports Smart Pixels -->
+<bool name="config_enableSmartPixels">true</bool>
+```
+
+Important for some devices
+====================
+ 
+### Also set this flag in device tree cherish_device.mk 
+```bash
+    # FOD animations
+    EXTRA_UDFPS_ANIMATIONS := true
+```
+
+### Add it in overlay/frameworks/base/core/res/res/values/config.xml 
+```bash
+<!-- Whether to show min/max refresh rate in display settings -->
+    <bool name="config_show_refresh_rate_controls">true</bool>
+    <bool name="config_supports_dynamic_refresh_rate_controls">true</bool>
+```
+
+### Night Light FOD
+```bash
+<!-- Night Light FOD -->
+    <bool name="disable_fod_night_light">true</bool>
+```
+ 
+### Pocket Lock
+```bash
+<!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">true</bool>
+```
+
+Battery Health
+====================
+### Add overlay/packages/apps/Settings/res/values/config.xml
+```bash
+<!-- Battery health -->
+    <bool name="config_supportBatteryHealth">true</bool>
+    <string name="config_batteryCalculatedCapacity">/sys/class/power_supply/bms/charge_full</string>
+    <string name="config_batteryDesignCapacity">/sys/class/power_supply/bms/charge_full_design</string>
+    <string name="config_batteryChargeCycles">/sys/class/power_supply/bms/cycle_count</string>
+```
+
+### Add sepolicy/vendor/system_app.te
+```bash
+# allow system apps to read battery status
+r_dir_file(system_app, sysfs_battery_supply)
+```
 -----------------------------------------------------------------------------
 
 Apply for Official Maintainership
