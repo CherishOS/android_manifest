@@ -14,7 +14,7 @@
   <!--<project path="external/connectivity" name="android_external_connectivity" remote="lineage" />-->
   <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" />
   <project path="external/json-c" name="android_external_json-c" remote="lineage" />
-  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" revision="lineage-18.1" remote="lineage" />
+  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" revision="lineage-19.1" remote="lineage" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="lineage" />
 
   <!-- Hardware -->
