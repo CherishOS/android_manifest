@@ -9,6 +9,11 @@
   <remote  name="cherish"
            fetch="https://github.com/CherishOS/"
            revision="twelve-one" />
+	
+  <!-- GitHub -->
+  <remote  name="cherish-devices"
+           fetch="https://github.com/CherishOS-Devices/"
+           revision="twelve" />
 
   <!-- GitLab -->
   <remote  name="gitlab"
@@ -127,6 +132,7 @@
   <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="cherish" />
   <project path="vendor/gapps" name="android_vendor_gapps" remote="hungphan2001-gitlab" clone-depth="1" />
+  <project path="vendor/OTA" name="OTA" remote="cherish-devices" />
   <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="cherish" />
   <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" remote="pixel" />
   <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="pixel" />
