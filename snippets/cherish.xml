@@ -67,6 +67,7 @@
   <project path="external/faceunlock" name="android_external_faceunlock" remote="hungphan2001-gitlab" />
   <project path="external/fastrpc" name="android_external_fastrpc" remote="cherish" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="cherish" />
+  <project path="external/erofs-utils" name="platform/external/erofs-utils" remote="aosp" revision="75d73335d25d52afd6a09c116207cd09bece16ab" />
   <project path="external/libcxx" name="android_external_libcxx" remote="cherish" />
   <project path="external/mksh" name="android_external_mksh" remote="cherish" />
   <project path="external/selinux" name="android_external_selinux" remote="cherish" />
