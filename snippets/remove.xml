@@ -4,7 +4,6 @@
   <!-- Rootdir -->
   <remove-project name="platform/art" />
   <remove-project name="platform/bionic" />
-  <remove-project name="platform/libcore" />
 
   <!-- Bootable -->
   <remove-project name="platform/bootable/recovery" />

@@ -32,7 +32,6 @@
   <!-- Rootdir -->
   <project path="art" name="android_art" remote="cherish" />
   <project path="bionic" name="android_bionic" remote="cherish" />
-  <project path="libcore" name="android_libcore" groups="pdk" remote="cherish" />
   <project path="manifest" name="android_manifest" remote="cherish" />
 
   <!-- Bootable -->
