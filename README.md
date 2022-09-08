@@ -1,6 +1,18 @@
 ![Cherish](assets/cherish.png)
 # <b> <i> CherishOS | Built with </i>💖
 
+Credits:
+=======
+ * [**AOSP**](https://android.googlesource.com)
+ * [**ArrowOS**](https://github.com/ArrowOS)
+ * [**LineageOS**](https://github.com/LineageOS)
+ * [**Nitrogen-Project**](https://github.com/nitrogen-project)
+ * [**PixelExperience**](https://github.com/PixelExperience)
+ * [**Evolution-X**](https://github.com/Evolution-X)
+
+And other ROMs 
+----------------------------------------------------------------------------
+
 Getting Started:
 ==============
 
@@ -55,7 +67,7 @@ Alright, so now we’re getting there. I have outlined the basics of what we’r
 To initialize your local repository, use a command like this:
 
 ```bash
-    repo init -u https://github.com/CherishOS/android_manifest.git -b twelve-one
+    repo init -u https://github.com/CherishOS/android_manifest.git -b tiramisu
 ```
 
 Then to sync up:
