@@ -105,6 +105,7 @@
   <!-- Packages (services) -->
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
+  <remove-project name="platform/packages/providers/DownloadProvider"/>
 
   <!-- System -->
   <remove-project name="platform/system/core" />
