@@ -18,7 +18,7 @@
   <!-- GitHub -->
   <remote  name="cherish-devices"
            fetch="https://github.com/CherishOS-Devices/"
-           revision="twelve" />
+           revision="tiramisu" />
 		   
    <!-- Github -->
   <remote  name="cherish-gitlab"
@@ -88,7 +88,7 @@
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="cherish" />
   <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="old" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cherish" />
-  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="old" />
+  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="cherish" />
   <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="cherish" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="cherish" />
   <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="cherish" />
