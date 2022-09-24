@@ -62,10 +62,13 @@
   <remove-project name="platform/prebuilts/go/darwin-x86" />
 
   <!-- External -->
+  <remove-project name="platform/external/exfatprogs" />
   <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/wpa_supplicant_8" />
 
   <!-- Framework -->
   <remove-project name="platform/frameworks/av" />
@@ -106,6 +109,9 @@
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/packages/providers/DownloadProvider"/>
+
+  <!-- Prebuilts -->
+  <remove-project name="platform/prebuilts/build-tools" />
 
   <!-- System -->
   <remove-project name="platform/system/core" />
