@@ -22,7 +22,7 @@
 		   
    <!-- Github -->
   <remote  name="cherish-gitlab"
-           fetch="https://gitlab.com/CherishOS"
+           fetch="https://gitlab.com/hungphan2001"
 	   revision="tiramisu" />
 		   
   <remote  name="arrow"
@@ -109,7 +109,7 @@
   <!-- Vendor -->
   <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
   <project path="vendor/codeaurora/telephony" name="ArrowOS/android_vendor_codeaurora_telephony" revision="arrow-13.0" remote="github" />
-  <project path="vendor/gapps" name="android_vendor_gapps" remote="cherish-gitlab" clone-depth="1" />
+  <project path="vendor/gapps" name="vendor_gapps" remote="cherish-gitlab" clone-depth="1" />
   <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="cherish" />
   <project path="vendor/OTA" name="OTA" remote="cherish-devices" />
 
