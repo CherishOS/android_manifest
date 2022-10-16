@@ -112,6 +112,7 @@
   <project path="system/sepolicy" name="android_system_sepolicy" remote="cherish" />
   <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="cherish" />
   <project path="system/update_engine" name="android_system_update_engine" remote="cherish" />
+  <project path="system/vold" name="android_system_vold" remote="cherish" />
 
   <!-- Vendor -->
   <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
