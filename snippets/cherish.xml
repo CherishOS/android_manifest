@@ -61,6 +61,7 @@
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy-um" remote="old" />
 
   <!-- External -->
+  <project path="external/faceunlock" name="android_external_faceunlock" remote="cherish-gitlab" />
   <project path="external/selinux" name="android_external_selinux" remote="cherish" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="cherish" />
 
@@ -88,6 +89,7 @@
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherish" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="cherish" />
   <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="old" />
+  <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="cherish" />
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="cherish" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cherish" />
   <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="cherish" />
