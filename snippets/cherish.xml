@@ -62,6 +62,7 @@
 
   <!-- External -->
   <project path="external/faceunlock" name="android_external_faceunlock" remote="cherish-gitlab" />
+  <project path="external/dwarves" name="android_external_dwarves" remote="cherish" />
   <project path="external/selinux" name="android_external_selinux" remote="cherish" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="cherish" />
 
