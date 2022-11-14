@@ -117,15 +117,10 @@
 
   <!-- Vendor -->
   <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
-  <project path="vendor/codeaurora/telephony" name="ArrowOS/android_vendor_codeaurora_telephony" revision="arrow-13.0" remote="github" />
   <project path="vendor/gapps" name="vendor_gapps" remote="cherish-gitlab" clone-depth="1" />
   <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="cherish" />
   <project path="vendor/OTA" name="OTA" remote="cherish-devices" />
 
   <!-- Vendor (Qcom) repos -->
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="ArrowOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="arrow-13.0" remote="github" />
-  <project path="vendor/qcom/opensource/dataservices" name="ArrowOS/android_vendor_qcom_opensource_dataservices" revision="arrow-13.0" remote="github" />
   <project path="vendor/qcom/opensource/healthd-ext" name="ArrowOS/android_vendor_qcom_opensource_healthd-ext" revision="arrow-13.0" remote="github" />
-  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="cherish" />
-  <project path="vendor/qcom/opensource/vibrator" name="ArrowOS/android_vendor_qcom_opensource_vibrator" revision="arrow-13.0" remote="github" />
 </manifest>
