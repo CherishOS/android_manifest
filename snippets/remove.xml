@@ -78,7 +78,6 @@
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/libs/net" />
-  <remove-project name="platform/frameworks/libs/systemui" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/frameworks/opt/net/ims" />
   <remove-project name="platform/frameworks/opt/telephony" />
@@ -113,14 +112,11 @@
   <remove-project name="platform/packages/apps/Gallery2" />
   <remove-project name="platform/packages/apps/Messaging" />
   <remove-project name="platform/packages/apps/Nfc" />
-  <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <remove-project name="platform/packages/apps/Stk" />
-  <remove-project name="platform/packages/apps/ThemePicker" />
-  <remove-project name="platform/packages/apps/WallpaperPicker2" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
-
+ 
   <!-- Packages (Modules) -->
   <remove-project name="platform/packages/modules/Bluetooth" />
   <remove-project name="platform/packages/modules/Connectivity" />

@@ -22,7 +22,7 @@
 		   
    <!-- Github -->
   <remote  name="cherish-gitlab"
-           fetch="https://gitlab.com/hungphan2001"
+           fetch="https://gitlab.com/cherishos-tiramisu"
 	   revision="tiramisu" />
 		   
   <remote  name="arrow"
@@ -69,9 +69,8 @@
   <!-- Frameworks -->
   <project path="frameworks/av" name="android_frameworks_av" remote="cherish" />
   <project path="frameworks/base" name="android_frameworks_base" remote="cherish" />
-  <project path="frameworks/libs/net" name="android_frameworks_libs_net" remote="cherish" />
-  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="cherish" />
   <project path="frameworks/native" name="android_frameworks_native" remote="cherish" />
+  <project path="frameworks/libs/net" name="android_frameworks_libs_net" remote="cherish" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="cherish" />
   <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="cherish" />
 
@@ -86,7 +85,6 @@
   <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" remote="cherish" />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="cherish" />
   <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="cherish" />
-  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="cherish" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherish" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="cherish" />
   <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="old" />
@@ -94,13 +92,13 @@
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="cherish" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cherish" />
   <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="cherish" />
-  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="cherish" />
-  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="cherish" />
+  <!--<project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="cherish" />-->
+  <!--<project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="cherish" />-->
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="cherish" />
   <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="cherish" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="cherish" />
   <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="cherish" />
-  <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="cherish" />
+  <!--<project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="cherish" />-->
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="cherish" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="cherish" />
 
@@ -117,8 +115,7 @@
 
   <!-- Vendor -->
   <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
-  <project path="vendor/gapps" name="vendor_gapps" remote="cherish-gitlab" clone-depth="1" />
-  <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="cherish" />
+  <project path="vendor/gapps" name="android_vendor_gapps" remote="cherish-gitlab" clone-depth="1" />
   <project path="vendor/OTA" name="OTA" remote="cherish-devices" />
 
   <!-- Vendor (Qcom) repos -->
