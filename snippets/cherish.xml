@@ -115,6 +115,7 @@
 
   <!-- Vendor -->
   <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
+  <project path="vendor/themes" name="android_vendor_themes" remote="cherish" />
   <project path="vendor/gapps" name="android_vendor_gapps" remote="cherish-gitlab" clone-depth="1" />
   <project path="vendor/OTA" name="OTA" remote="cherish-devices" />
 
