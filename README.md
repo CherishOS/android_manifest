@@ -94,7 +94,7 @@ Important for Smart Pixel AOD
 ### Add it in overlay/frameworks/base/core/res/res/values/config.xml
 ```bash
 <!-- Whether the device supports Smart Pixels -->
-<bool name="config_enableSmartPixels">true</bool>
+<bool name="config_supportSmartPixels">true</bool>
 ```
 
 Important for some devices
