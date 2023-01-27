@@ -65,6 +65,7 @@
   <project path="external/colorkt" name="android_external_colorkt" remote="cherish" />
   <project path="external/faceunlock" name="android_external_faceunlock" remote="cherish-gitlab" />
   <project path="external/dwarves" name="android_external_dwarves" remote="cherish" />
+  <project path="external/piex" name="android_external_piex" remote="cherish" />
   <project path="external/selinux" name="android_external_selinux" remote="cherish" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="cherish" />
   <project path="external/themelib" name="android_external_themelib" remote="cherish" />
@@ -107,7 +108,9 @@
 
   <!-- System -->
   <project path="system/core" name="android_system_core" remote="cherish" />
+  <project path="external/fastrpc" name="android_external_fastrpc" remote="cherish" />
   <project path="system/libhidl" name="android_system_libhidl" remote="cherish" />
+  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="cherish" />
   <project path="system/logging" name="android_system_logging" remote="cherish" />
   <project path="system/media" name="android_system_media" remote="cherish" />
   <project path="system/security" name="android_system_security" remote="cherish" />
