@@ -81,6 +81,7 @@
   <!-- Hardware -->
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="cherish" />
   <project path="hardware/cherish/interfaces" name="android_hardware_cherish_interfaces" remote="cherish" />
+  <project path="hardware/cherish/compat" name="android_hardware_cherish_compat" remote="cherish" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="cherish" />
   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="cherish" />
 
