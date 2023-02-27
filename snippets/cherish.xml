@@ -84,6 +84,7 @@
   <project path="hardware/cherish/compat" name="android_hardware_cherish_compat" remote="cherish" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="cherish" />
   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="cherish" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" revision="tiramisu-caf" remote="cherish" />
 
   <!-- Packages -->
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="cherish" />
