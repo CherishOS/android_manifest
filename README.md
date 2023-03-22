@@ -4,11 +4,9 @@
 Credits:
 =======
  * [**AOSP**](https://android.googlesource.com)
- * [**ArrowOS**](https://github.com/ArrowOS)
  * [**LineageOS**](https://github.com/LineageOS)
  * [**Nitrogen-Project**](https://github.com/nitrogen-project)
  * [**PixelExperience**](https://github.com/PixelExperience)
- * [**Evolution-X**](https://github.com/Evolution-X)
 
 And other ROMs 
 ----------------------------------------------------------------------------
