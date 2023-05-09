@@ -30,6 +30,11 @@
            review="https://review.arrowos.net/"
            revision="refs/heads/arrow-13.0" />
 
+  <remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="thirteen"
+          review="gerrit.pixelexperience.org" />
+
   <!-- Rootdir -->
   <project path="art" name="android_art" remote="cherish" />
   <project path="bionic" name="android_bionic" remote="cherish" />
@@ -90,6 +95,11 @@
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="cherish" />
   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="cherish" />
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" revision="tiramisu-caf" remote="cherish" />
+  
+  <project path="hardware/qcom-caf/bengal/audio" name="hardware_qcom-caf_bengal_audio" remote="pixel" />
+  <project path="hardware/qcom-caf/bengal/display" name="hardware_qcom-caf_bengal_display" remote="pixel" />
+  <project path="hardware/qcom-caf/bengal/gps" name="hardware_qcom-caf_bengal_gps" remote="pixel" />
+  <project path="hardware/qcom-caf/bengal/media" name="hardware_qcom-caf_bengal_media" remote="pixel" />
 
    <!-- Packages (Resources) repos -->
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="cherish" />
