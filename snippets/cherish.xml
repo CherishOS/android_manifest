@@ -62,17 +62,13 @@
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="android_device_qcom_sepolicy_vndr-legacy-um" remote="cherish" />
 
   <!-- External -->
-  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="cherish" />
   <project path="external/colorkt" name="android_external_colorkt" remote="cherish" />
   <project path="external/faceunlock" name="android_external_faceunlock" remote="cherish-gitlab" />
-  <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="cherish" />
-  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="cherish" />
   <project path="external/dwarves" name="android_external_dwarves" remote="cherish" />
   <project path="external/piex" name="android_external_piex" remote="cherish" />
   <project path="external/selinux" name="android_external_selinux" remote="cherish" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="cherish" />
   <project path="external/themelib" name="android_external_themelib" remote="cherish" />
-  <project path="external/vixl" name="android_external_vixl" remote="cherish" />
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="android_frameworks_av" remote="cherish" />
