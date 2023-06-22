@@ -30,6 +30,9 @@
   <remove-project name="device/google/coral" />
   <remove-project name="device/google/coral-kernel" />
   <remove-project name="device/google/coral-sepolicy" />
+  <remove-project name="device/google/lynx" />
+  <remove-project name="device/google/lynx-sepolicy" />
+  <remove-project name="device/google/lynx-kernel" />
   <remove-project name="device/google/redbull" />
   <remove-project name="device/google/redbull-sepolicy" />
   <remove-project name="device/google/redbull-kernel" />
@@ -106,11 +109,10 @@
   <remove-project name="platform/hardware/qcom/wlan" />
 
   <!-- Packages (Apps) -->
-  <remove-project name="platform/packages/apps/Calendar" />
-  <remove-project name="platform/packages/apps/Contacts" />
-  <remove-project name="platform/packages/apps/DeskClock" />
   <remove-project name="platform/packages/apps/DocumentsUI" />
   <remove-project name="platform/packages/apps/Dialer" />
+  <remove-project name="platform/packages/apps/DeskClock" />
+  <remove-project name="platform/packages/apps/Contacts" />
   <remove-project name="platform/packages/apps/EmergencyInfo" />
   <remove-project name="platform/packages/apps/Gallery2" />
   <remove-project name="platform/packages/apps/Launcher3" />
