@@ -30,6 +30,9 @@
   <remove-project name="device/google/coral" />
   <remove-project name="device/google/coral-kernel" />
   <remove-project name="device/google/coral-sepolicy" />
+  <remove-project name="device/google/felix" />
+  <remove-project name="device/google/felix-kernel" />
+  <remove-project name="device/google/felix-sepolicy" />
   <remove-project name="device/google/lynx" />
   <remove-project name="device/google/lynx-sepolicy" />
   <remove-project name="device/google/lynx-kernel" />
@@ -51,6 +54,9 @@
   <remove-project name="device/google/raviole-kernel" />
   <remove-project name="device/google/pantah" />
   <remove-project name="device/google/pantah-kernel" />
+  <remove-project name="device/google/tangorpro" />
+  <remove-project name="device/google/tangorpro-kernel" />
+  <remove-project name="device/google/tangorpro-sepolicy" />
   <remove-project name="device/google/trout" />
   <remove-project name="device/google/vrservices" />
   <remove-project name="device/linaro/dragonboard" />
