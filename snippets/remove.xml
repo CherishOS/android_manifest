@@ -122,6 +122,7 @@
   <remove-project name="platform/hardware/ril" />
 
   <!-- Packages (Apps) -->
+  <remove-project name="platform/packages/apps/Calendar" />
   <remove-project name="platform/packages/apps/Nfc" />
   <remove-project name="platform/packages/apps/Settings" />
 
