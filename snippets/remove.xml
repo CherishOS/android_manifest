@@ -135,6 +135,8 @@
   <remove-project name="platform/packages/modules/common" />
 
   <!-- Packages (Providers) -->
+  <remove-project name="platform/packages/services/Telecomm" />
+  <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/packages/providers/MediaProvider" />
   <remove-project name="platform/packages/providers/DownloadProvider" />
 
