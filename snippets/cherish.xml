@@ -20,9 +20,9 @@
            fetch="https://github.com/CherishOS-Devices/"
            revision="tiramisu" />
 
-  <remote name="pixel-gitlab"
-          fetch="https://gitlab.pixelexperience.org/android"
-          revision="fourteen" />
+  <remote name="cherish-gitlab"
+          fetch="https://gitlab.com/cherishos-udc"
+          revision="udc" />
 
   <!-- Rootdir -->
   <project path="art" name="android_art" remote="cherish" />
@@ -131,7 +131,7 @@
   <project path="vendor/support" name="android_vendor_support" remote="cherish" />
   <project path="vendor/themes" name="android_vendor_themes" remote="cherish" />
   <!-- <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="cherish" /> -->
-  <project path="vendor/gms" name="vendor_gms" remote="pixel-gitlab" clone-depth="1" />
+  <project path="vendor/gms" name="vendor_gms" remote="cherish-gitlab" clone-depth="1" />
   <project path="vendor/OTA" name="OTA" remote="cherish-devices" />
 
   <!-- Prebuilts -->
