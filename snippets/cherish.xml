@@ -9,11 +9,6 @@
   <remote  name="cherish"
            fetch="https://github.com/CherishOS"
            revision="udc" />
-
-  <!-- GitHub -->
-  <remote  name="old"
-           fetch="https://github.com/CherishOS"
-           revision="twelve-one" />
 	
   <!-- GitHub -->
   <remote  name="cherish-devices"
@@ -47,12 +42,13 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
-  <!-- Device -->
+  <!-- CodeLinaro additions -->
   <project path="device/cherish/sepolicy" name="android_device_cherish_sepolicy" remote="cherish" />
-  <!-- <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" revision="tiramisu" remote="cherish" />
-  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy" remote="old" />
-  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy-um" remote="old" />
-  <project path="device/qcom/sepolicy_vndr-legacy-um" name="android_device_qcom_sepolicy_vndr-legacy-um" revision="tiramisu" remote="cherish" /> -->
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" groups="qcom,qssi" remote="cherish" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" groups="qcom,sdm660" revision="udc-legacy-um" remote="cherish" />
+  <project path="device/qcom/sepolicy_vndr/legacy-um" name="android_device_qcom_sepolicy_vndr" groups="qcom,lahaina" revision="udc-legacy-um" remote="cherish" />
+  <project path="device/qcom/sepolicy_vndr/sm8450" name="android_device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" revision="udc-caf-sm8450" remote="cherish" />
+  <project path="device/qcom/sepolicy_vndr/sm8550" name="android_device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" revision="udc-caf-sm8550" remote="cherish" />
 
   <!-- External -->
   <!-- <project path="external/colorkt" name="android_external_colorkt" remote="cherish" /> -->
