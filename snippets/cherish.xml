@@ -133,5 +133,5 @@
   <project path="vendor/OTA" name="OTA" remote="cherish-devices" />
 
   <!-- Prebuilts -->
-  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="refs/tags/android-14.0.0_r0.8" />
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="refs/tags/android-14.0.0_r0.17" />
   </manifest>

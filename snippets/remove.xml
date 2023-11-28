@@ -83,6 +83,8 @@
   <remove-project name="platform/prebuilts/go/darwin-x86" />
 
   <!-- External -->
+  <remove-project name="platform/external/android-nn-driver" />
+  <remove-project name="platform/external/armnn" />
   <remove-project name="platform/external/cronet" />
   <remove-project name="platform/external/dtc" />
   <remove-project name="platform/external/exfatprogs" />

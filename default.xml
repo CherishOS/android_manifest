@@ -1270,4 +1270,5 @@
   <include name="snippets/remove.xml" />
   <include name="snippets/cherish.xml" />
   <include name="snippets/lineage.xml" />
+  <include name="snippets/pixel.xml"/>
 </manifest>
