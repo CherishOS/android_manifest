@@ -60,8 +60,8 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="android_frameworks_av"  remote="cherish"/>
-  <project path="frameworks/base" name="android_frameworks_base" remote="cherish" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="cherish" />
+  <project path="frameworks/base" name="android_frameworks_base" revision="test" remote="cherish" />
+  <project path="frameworks/native" name="android_frameworks_native" revision="test" remote="cherish" />
   <!-- <project path="frameworks/libs/net" name="android_frameworks_libs_net" remote="cherish" /> -->
   <!--project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="cherish" /-->
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="cherish" />
@@ -79,11 +79,11 @@
 
   <!-- Packages -->
   <!--project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="cherish" /-->
-  <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" remote="cherish" />
+  <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" revision="test" remote="cherish" />
   <!-- <project path="packages/apps/DesktopMode" name="LMODroid/platform_packages_apps_DesktopMode" groups="pdk-fs" revision="thirteen" remote="github" />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="cherish" />-->
-  <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="cherish" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherish" />
+  <!-- <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="cherish" /> -->
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" revision="test" remote="cherish" />
   <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="cherish-gitlab" />
   <!-- <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="cherish" />
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="cherish" /> -->
@@ -104,10 +104,10 @@
   <project path="packages/modules/common" name="android_packages_modules_common" remote="cherish" />
 
   <!-- Packages (services) -->
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="cherish" />
+  <!-- <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="cherish" /> -->
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="cherish" />
-  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="cherish" />
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="cherish" />
+  <!-- <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="cherish" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="cherish" /> -->
   <!-- <project path="packages/services/VncFlinger" name="LMODroid/platform_packages_services_VncFlinger" groups="pdk-cw-fs,pdk-fs" revision="thirteen" remote="github" />-->
   
   <!-- System -->
@@ -125,10 +125,10 @@
 
   <!-- Vendor -->
   <project path="vendor/certification" name="android_vendor_certification" remote="cherish-gitlab" />
-  <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
+  <project path="vendor/cherish" name="android_vendor_cherish"  revision="test" remote="cherish" />
   <project path="vendor/support" name="android_vendor_support" remote="cherish" />
-  <project path="vendor/themes" name="android_vendor_themes" remote="cherish" />
-  <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="cherish" />
+  <project path="vendor/themes" name="android_vendor_themes" revision="test" remote="cherish" />
+  <!-- <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="cherish" /> -->
   <project path="vendor/google/interfaces" name="android_vendor_google_interfaces" remote="cherish" />
   <project path="vendor/gms" name="vendor_gms" remote="cherish-gitlab" clone-depth="1" />
   <project path="vendor/OTA" name="OTA" remote="cherish-devices" />
