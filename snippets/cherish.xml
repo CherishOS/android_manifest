@@ -59,6 +59,7 @@
 
   <!-- External -->
   <!-- <project path="external/colorkt" name="android_external_colorkt" remote="cherish" /> -->
+  <project path="external/FadingEdgeLayout" name="android_external_FadingEdgeLayout" remote="cherish" />
   <project path="external/piex" name="android_external_piex" remote="cherish" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="cherish" />
   <!-- <project path="external/themelib" name="android_external_themelib" remote="cherish" />-->
@@ -94,6 +95,7 @@
   <!-- <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="cherish" />
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="cherish" /> -->
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cherish" />
+  <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="cherish" />
   <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="cherish" />
   <!--<project path="packages/apps/ParallelSpace" name="android_packages_apps_ParallelSpace" remote="cherish" />
   <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
