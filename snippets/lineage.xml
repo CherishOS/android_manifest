@@ -8,7 +8,6 @@
 
   <project path="external/dtc" name="android_external_dtc" remote="lineage" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="lineage" />
-  <project path="external/cronet" name="android_external_cronet" remote="lineage" />
   <project path="external/libcxx" name="android_external_libcxx" remote="lineage" />
   <project path="external/libnl" name="android_external_libnl" groups="pdk" remote="lineage" />
   <project path="external/libvpx" name="android_external_libvpx" remote="lineage" />
