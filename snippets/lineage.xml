@@ -8,7 +8,6 @@
 
   <project path="external/dtc" name="android_external_dtc" remote="lineage" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="lineage" />
-  <project path="external/cronet" name="android_external_cronet" remote="lineage" />
   <project path="external/libcxx" name="android_external_libcxx" remote="lineage" />
   <project path="external/libnl" name="android_external_libnl" groups="pdk" remote="lineage" />
   <project path="external/libvpx" name="android_external_libvpx" remote="lineage" />
@@ -29,6 +28,8 @@
    <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" remote="lineage" />
    <project path="packages/apps/Etar" name="android_packages_apps_Etar" remote="lineage" />
    <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="lineage" />
+   <project path="packages/modules/adb" name="android_packages_modules_adb" remote="lineage"  />
+   <project path="packages/modules/common" name="android_packages_modules_common" remote="lineage"  />
 
   <!-- Legacy AOSP additions -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
@@ -44,6 +45,7 @@
   <project path="hardware/qcom/sdm845/vr" name="platform/hardware/qcom/sdm845/vr" groups="generic_fs,qcom,qcom_sdm845" remote="aosp" revision="refs/tags/android-13.0.0_r75" />
 
   <!-- LineageOS additions -->
+  <project path="external/cronet" name="android_external_cronet" remote="lineage"  />
   <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" />
   <project path="external/openssh" name="android_external_openssh" groups="pdk" remote="lineage" />
@@ -52,7 +54,6 @@
   <project path="hardware/lineage/livedisplay" name="android_hardware_lineage_livedisplay" remote="lineage" />
  
   <!-- Inline kernel build -->
-  <project path="prebuilts/build-tools" name="android_prebuilts_build-tools" groups="pdk" clone-depth="1" remote="lineage" />
   <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" clone-depth="1" remote="lineage" />
   <project path="prebuilts/clang/kernel/linux-x86/clang-r416183b" name="android_prebuilts_clang_kernel_linux-x86_clang-r416183b" clone-depth="1" revision="lineage-20.0" remote="lineage" />  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" remote="lineage" revision="lineage-19.1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" remote="lineage" revision="lineage-19.1" />

@@ -9,6 +9,10 @@
   <remote  name="cherish"
            fetch="https://github.com/CherishOS"
            revision="udc" />
+
+  <remote  name="cherish-uqpr2"
+           fetch="https://github.com/CherishOS"
+           revision="refs/heads/uqpr2" />
 	
   <!-- GitHub -->
   <remote  name="cherish-devices"
@@ -26,27 +30,31 @@
            fetch="https://bitbucket.org/CherishOS/"
            revision="refs/heads/udc" />
 
+  <remote  name="evo-bb2"
+           fetch="https://bitbucket.org/evo-x/"
+           revision="refs/heads/uqpr2" />
+
   <!-- Rootdir -->
-  <project path="art" name="android_art" remote="cherish" />
-  <project path="bionic" name="android_bionic" remote="cherish" />
-  <project path="manifest" name="android_manifest" remote="cherish" />
+  <project path="art" name="android_art" remote="cherish-uqpr2"  />
+  <project path="bionic" name="android_bionic" remote="cherish-uqpr2"  />
+  <project path="manifest" name="android_manifest" remote="cherish-uqpr2"  />
 
   <!-- Bootable -->
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="cherish" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="cherish-uqpr2"  />
 
   <!-- Build -->
-  <project path="build/make" name="android_build" remote="cherish" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
+  <project path="build/make" name="android_build" groups="pdk,sysui-studio" remote="cherish-uqpr2" >
+    <copyfile dest="Makefile" src="core/root.mk" />
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
+    <linkfile dest="build/core" src="core" />
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
+    <linkfile dest="build/target" src="target" />
+    <linkfile dest="build/tools" src="tools" />
   </project>
-  <project path="build/soong" name="android_build_soong" remote="cherish" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="cherish-uqpr2" >
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
   </project>
 
   <!-- CodeLinaro additions -->
@@ -61,24 +69,24 @@
   <!-- <project path="external/colorkt" name="android_external_colorkt" remote="cherish" /> -->
   <project path="external/FadingEdgeLayout" name="android_external_FadingEdgeLayout" remote="cherish" />
   <project path="external/piex" name="android_external_piex" remote="cherish" />
-  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="cherish" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="cherish-uqpr2"  />
   <!-- <project path="external/themelib" name="android_external_themelib" remote="cherish" />-->
   <!-- <project path="external/tigervnc" name="LMODroid/platform_external_tigervnc" groups="pdk" revision="thirteen" remote="github" />  -->
 
   <!-- Frameworks -->
-  <project path="frameworks/av" name="android_frameworks_av"  remote="cherish"/>
-  <project path="frameworks/base" name="android_frameworks_base" remote="cherish" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="cherish" />
+  <project path="frameworks/av" name="android_frameworks_av"  remote="cherish-uqpr2" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="cherish-uqpr2"  />
+  <project path="frameworks/native" name="android_frameworks_native" remote="cherish-uqpr2"  />
   <!-- <project path="frameworks/libs/net" name="android_frameworks_libs_net" remote="cherish" /> -->
   <!--project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="cherish" /-->
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="cherish" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="cherish-uqpr2"  />
   <!--project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="cherish" /-->
 
   <!-- Hardware -->
-  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="cherish" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="cherish-uqpr2"  />
   <project path="hardware/cherish/interfaces" name="android_hardware_cherish_interfaces" remote="cherish" />
-  <project path="hardware/cherish/compat" name="android_hardware_cherish_compat" remote="cherish" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="cherish" />
+  <project path="hardware/cherish/compat" name="android_hardware_cherish_compat" remote="cherish-uqpr2"  />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="cherish-uqpr2"  />
   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="cherish" />
 
    <!-- Packages (Resources) repos -->
@@ -86,16 +94,16 @@
 
   <!-- Packages -->
   <!--project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="cherish" /-->
-  <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" remote="cherish" />
+  <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" remote="cherish-uqpr2"  />
   <!-- <project path="packages/apps/DesktopMode" name="LMODroid/platform_packages_apps_DesktopMode" groups="pdk-fs" revision="thirteen" remote="github" />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="cherish" />-->
-  <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="cherish" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherish" />
-  <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="cherish-gitlab" />
+  <!-- <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="cherish" /> -->
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherish-uqpr2"  />
+  <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" revision="uqpr2" remote="cherish-gitlab" />
   <!-- <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="cherish" />
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="cherish" /> -->
-  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cherish" />
-  <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="cherish" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cherish-uqpr2"  />
+  <!-- <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="cherish" /> -->
   <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="cherish" />
   <!--<project path="packages/apps/ParallelSpace" name="android_packages_apps_ParallelSpace" remote="cherish" />
   <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
@@ -104,40 +112,38 @@
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="cherish" /> 
 
   <!-- Packages (Modules) -->
-  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="cherish" />
-  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="cherish-gitlab" />
-  <project path="packages/modules/Permission" name="android_packages_modules_Permission"  remote="cherish" />
-  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="cherish" />
-  <project path="packages/modules/adb" name="android_packages_modules_adb" remote="cherish" />
-  <project path="packages/modules/common" name="android_packages_modules_common" remote="cherish" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="cherish-uqpr2"  />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" revision="uqpr2" remote="cherish-bb" />
+  <project path="packages/modules/Permission" name="android_packages_modules_Permission"  remote="cherish-uqpr2"  />
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="cherish-uqpr2"  />
 
   <!-- Packages (services) -->
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="cherish" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="cherish" />
-  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="cherish" />
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="cherish" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="cherish-uqpr2"  />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="cherish-uqpr2"  />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="cherish-uqpr2"  />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="cherish-uqpr2"  />
   <!-- <project path="packages/services/VncFlinger" name="LMODroid/platform_packages_services_VncFlinger" groups="pdk-cw-fs,pdk-fs" revision="thirteen" remote="github" />-->
   
   <!-- System -->
-  <project path="system/core" name="android_system_core" remote="cherish" />
-  <project path="system/extras" name="android_system_extras" remote="cherish" />
-  <project path="system/libhidl" name="android_system_libhidl" remote="cherish" />
-  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="cherish" />
-  <project path="system/logging" name="android_system_logging" remote="cherish" />
-  <project path="system/media" name="android_system_media" remote="cherish" />
-  <project path="system/security" name="android_system_security" remote="cherish" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="cherish" />
-  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="cherish" />
-  <project path="system/update_engine" name="android_system_update_engine" remote="cherish" />
-  <project path="system/vold" name="android_system_vold" remote="cherish" />
+  <project path="system/core" name="android_system_core" remote="cherish-uqpr2"  />
+  <project path="system/extras" name="android_system_extras" remote="cherish-uqpr2"  />
+  <project path="system/libhidl" name="android_system_libhidl" remote="cherish-uqpr2"  />
+  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="cherish-uqpr2"  />
+  <project path="system/logging" name="android_system_logging" remote="cherish-uqpr2" />
+  <project path="system/media" name="android_system_media" remote="cherish-uqpr2"  />
+  <project path="system/security" name="android_system_security" remote="cherish-uqpr2"  />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="cherish-uqpr2"  />
+  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="cherish-uqpr2"  />
+  <project path="system/update_engine" name="android_system_update_engine" remote="cherish-uqpr2"  />
+  <project path="system/vold" name="android_system_vold" remote="cherish-uqpr2"  />
 
   <!-- Vendor -->
   <project path="vendor/certification" name="android_vendor_certification" remote="cherish-gitlab" />
-  <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
+  <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish-uqpr2"  />
   <project path="vendor/support" name="android_vendor_support" remote="cherish" />
-  <project path="vendor/themes" name="android_vendor_themes" remote="cherish" />
-  <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="cherish" />
+  <project path="vendor/themes" name="android_vendor_themes" remote="cherish-uqpr2"  />
+  <!-- <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="cherish" /> -->
   <project path="vendor/google/interfaces" name="android_vendor_google_interfaces" remote="cherish" />
-  <project path="vendor/gms" name="vendor_gms" remote="cherish-bb" clone-depth="1" />
+  <project path="vendor/gms" name="vendor_gapps" groups="vendor" remote="evo-bb2" clone-depth="1" />
   <project path="vendor/OTA" name="OTA" remote="cherish-devices" />
   </manifest>

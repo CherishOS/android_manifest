@@ -13,7 +13,6 @@
   <remove-project name="device/generic/mini-emulator-x86" />
   <remove-project name="device/generic/mini-emulator-x86_64" />
   <remove-project name="device/generic/opengl-transport" />
-  <remove-project name="device/generic/qemu" />
   <remove-project name="device/generic/trusty" />
   <remove-project name="device/generic/uml" />
   <remove-project name="device/generic/x86" />
@@ -67,8 +66,6 @@
   <remove-project name="device/linaro/poplar" />
   <remove-project name="device/linaro/poplar-kernel" />
   <remove-project name="device/sample" />
-  <remove-project name="device/ti/beagle-x15" />
-  <remove-project name="device/ti/beagle-x15-kernel" />
   <remove-project name="device/google/shusky" />
   <remove-project name="device/google/shusky-kernel" />
   <remove-project name="device/google/shusky-sepolicy" />
@@ -141,9 +138,6 @@
   <remove-project name="platform/packages/providers/DownloadProvider" />
 
   <!-- Packages (services) -->
-
-  <!-- Prebuilts -->
-  <remove-project name="platform/prebuilts/build-tools" />
 
   <!-- System -->
   <remove-project name="platform/system/bpf" />
