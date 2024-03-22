@@ -43,18 +43,18 @@
   <project path="bootable/recovery" name="android_bootable_recovery" remote="cherish-uqpr2"  />
 
   <!-- Build -->
-  <project path="build/make" name="android_build" remote="cherish-uqpr2"  >
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
+  <project path="build/make" name="android_build" groups="pdk,sysui-studio" remote="cherish-uqpr2" >
+    <copyfile dest="Makefile" src="core/root.mk" />
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
+    <linkfile dest="build/core" src="core" />
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
+    <linkfile dest="build/target" src="target" />
+    <linkfile dest="build/tools" src="tools" />
   </project>
-  <project path="build/soong" name="android_build_soong" remote="cherish-uqpr2"  >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="cherish-uqpr2" >
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
   </project>
 
   <!-- CodeLinaro additions -->
@@ -132,7 +132,7 @@
   <project path="system/extras" name="android_system_extras" remote="cherish-uqpr2"  />
   <project path="system/libhidl" name="android_system_libhidl" remote="cherish-uqpr2"  />
   <project path="system/libhwbinder" name="android_system_libhwbinder" remote="cherish-uqpr2"  />
-  <project path="system/logging" name="android_system_logging" remote="cherish" />
+  <project path="system/logging" name="android_system_logging" remote="cherish-uqpr2" />
   <project path="system/media" name="android_system_media" remote="cherish-uqpr2"  />
   <project path="system/security" name="android_system_security" remote="cherish-uqpr2"  />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="cherish-uqpr2"  />
