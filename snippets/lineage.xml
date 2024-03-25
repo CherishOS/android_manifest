@@ -43,6 +43,7 @@
   <project path="hardware/qcom/sdm845/vr" name="platform/hardware/qcom/sdm845/vr" groups="generic_fs,qcom,qcom_sdm845" remote="aosp" revision="refs/tags/android-13.0.0_r75" />
 
   <!-- LineageOS additions -->
+  <project path="external/cronet" name="android_external_cronet" remote="lineage"  />
   <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" />
   <project path="external/openssh" name="android_external_openssh" groups="pdk" remote="lineage" />
