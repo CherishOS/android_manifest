@@ -32,7 +32,7 @@
 
   <remote  name="evo-bb2"
            fetch="https://bitbucket.org/evo-x/"
-           revision="refs/heads/uqpr2" />
+           revision="refs/heads/udc" />
 
   <!-- Rootdir -->
   <project path="art" name="android_art" remote="cherish-uqpr2"  />
