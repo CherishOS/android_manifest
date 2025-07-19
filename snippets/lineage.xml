@@ -55,8 +55,6 @@
   <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" clone-depth="1" remote="lineage" />
 
   <!-- CodeLinaro additions -->
-  <project path="device/qcom/sepolicy_vndr/sm8550" name="android_device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" revision="lineage-22.2-caf-sm8550" remote="lineage" />
-  <project path="device/qcom/sepolicy_vndr/sm8650" name="android_device_qcom_sepolicy_vndr" groups="qcom,lanai-vendor" revision="lineage-22.2-caf-sm8650" remote="lineage" />
   <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" groups="qcom,qssi" remote="lineage" />
   <project path="external/json-c" name="android_external_json-c" groups="qcom,qssi" remote="lineage" />
   <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,lanai-vendor" revision="lineage-22.2-caf" remote="lineage" />
