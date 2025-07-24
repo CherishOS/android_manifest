@@ -150,6 +150,7 @@
   <!-- Vendor -->
   <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish"  />
   <project path="vendor/google/overlays/ThemeIcons" name="android_vendor_google_overlays_ThemeIcons" remote="cherish" />
+  <project path="vendor/lineage_compat" name="android_vendor_lineage_compat" remote="cherish" />
   <project path="vendor/support" name="android_vendor_support" remote="cherish" />
   <project path="vendor/themes" name="android_vendor_themes" remote="cherish"  />
   <!-- <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="cherish" /> -->
