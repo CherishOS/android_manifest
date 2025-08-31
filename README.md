@@ -103,7 +103,7 @@ Important for some devices
 ### Also set this flag in device tree cherish_device.mk 
 ```bash
     # FOD animations
-    EXTRA_UDFPS_ANIMATIONS := true
+    TARGET_HAS_UDFPS := true
 ```
 
 ### Add it in overlay/frameworks/base/core/res/res/values/config.xml 
