@@ -141,6 +141,17 @@ Battery Health
 # allow system apps to read battery status
 r_dir_file(system_app, sysfs_battery_supply)
 ```
+
+Flag
+=======
+### Add in cherish_codename.mk
+```bash
+CHERISH_MAINTAINER := 
+CHERISH_CHIPSET := 
+CHERISH_BATTERY := 
+CHERISH_DISPLAY := 
+
+```
 -----------------------------------------------------------------------------
 
 Apply for Official Maintainership
