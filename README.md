@@ -67,7 +67,7 @@ Alright, so now we’re getting there. I have outlined the basics of what we’r
 To initialize your local repository, use a command like this:
 
 ```bash
-    repo init -u https://github.com/CherishOS/android_manifest.git -b uqpr2
+    repo init -u https://github.com/CherishOS/android_manifest.git -b sixteen
 ```
 
 Then to sync up:
@@ -103,7 +103,7 @@ Important for some devices
 ### Also set this flag in device tree cherish_device.mk 
 ```bash
     # FOD animations
-    EXTRA_UDFPS_ANIMATIONS := true
+    TARGET_HAS_UDFPS := true
 ```
 
 ### Add it in overlay/frameworks/base/core/res/res/values/config.xml 
