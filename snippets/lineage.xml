@@ -6,6 +6,7 @@
            revision="refs/heads/lineage-22.2" />
 
   <!-- LineageOS additions -->
+   <project path="external/dtc" name="android_external_dtc" groups="pdk" revision="lineage-23.0" remote="lineage" />
   <!--<project path="external/bash" name="android_external_bash" remote="lineage" />-->
   <!--<project path="external/htop" name="android_external_htop" remote="lineage" />
   <project path="external/nano" name="android_external_nano" remote="lineage" />-->
