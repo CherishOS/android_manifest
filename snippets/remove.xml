@@ -17,6 +17,7 @@
   <remove-project name="platform/external/piex" />
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/external/wpa_supplicant_8" />
+  <remove-project name="platform/external/zstd" />
 
   <!-- Framework -->
   <remove-project name="platform/frameworks/av" />
