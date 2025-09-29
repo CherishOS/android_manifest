@@ -6,9 +6,9 @@
            revision="refs/heads/lineage-23.0" />
 
   <!-- LineageOS additions -->
-  <project path="external/dtc" name="android_external_dtc" groups="pdk" remote="lineage" />
+<project path="external/dtc" name="android_external_dtc" groups="pdk" remote="lineage" />
   <project path="external/bash" name="android_external_bash" remote="lineage" />
-  <project path="external/chromium-webview/patches" name="android_external_chromium-webview_patches" groups="pdk" revision="main" remote="lineage" />
+<project path="external/chromium-webview/patches" name="android_external_chromium-webview" revision="main" remote="lineage">
     <linkfile src="os_pickup.bp" dest="external/chromium-webview/Android.bp" />
     <linkfile src="README" dest="external/chromium-webview/README" />
   </project>
