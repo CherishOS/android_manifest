@@ -158,5 +158,4 @@
   <project path="vendor/gms" name="android_vendor_gms" remote="cherish-gitea" clone-depth="1" />
   <project path="vendor/pixel-style" name="android_vendor_pixel-style" remote="cherish" />
   <project path="vendor/OTA" name="OTA" remote="cherish-devices" />
-  <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="android_vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,pakala-audio" remote="cherish" />
-  </manifest>
+</manifest>
