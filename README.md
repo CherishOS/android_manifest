@@ -4,10 +4,11 @@
 Credits:
 =======
  * [**AOSP**](https://android.googlesource.com)
+ * [**AxionAOSP**](https://github.com/AxionAOSP)
  * [**Crdroid**](https://github.com/crdroidandroid)
  * [**LineageOS**](https://github.com/LineageOS)
  * [**Evolution-X**](https://github.com/Evolution-X)
- * [**RisingTechOSS**](https://github.com/RisingTechOSS)
+ * [**RisingOS-Revived**](https://github.com/RisingOS-Revived)
  * [**PixelExperience**](https://github.com/PixelExperience)
 
 And other ROMs 
@@ -106,11 +107,36 @@ Important for some devices
     TARGET_HAS_UDFPS := true
 ```
 
-### Add it in overlay/frameworks/base/core/res/res/values/config.xml 
+### Also it in overlay/frameworks/base/core/res/res/values/config.xml turn on FOD Animation and Picker
+```bash
+<!-- Whether to enable fp unlock when screen turns off on udfps devices -->
+    <bool name="config_screen_off_udfps_enabled">true</bool>
+
+<!-- Default value for fp screen off unlock toggle, it only works for the devices that support
+         fp screen off unlock-->
+    <bool name="config_screen_off_udfps_default_on">true</bool>
+```
+### Add in cherish_codename.mk
+```bash
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=your_name
+```
+
+### Build GMS 
 ```bash
 <!-- Whether to show min/max refresh rate in display settings -->
     <bool name="config_show_refresh_rate_controls">true</bool>
     <bool name="config_supports_dynamic_refresh_rate_controls">true</bool>
+```
+
+### GMS build flags, false by default 
+```bash
+# Ship with GMS packages, replaces default AOSP packages with Google manufactured packages.
+    WITH_GMS := true
+
+# CORE build flags
+    WITH_GMS := true
+    TARGET_USES_PICO_GAPPS := true
 ```
 
 ### Night Light FOD
