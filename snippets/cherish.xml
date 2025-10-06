@@ -23,9 +23,9 @@
           fetch="https://gitlab.com/CherishOS-A14"
           revision="udc" />
 
-  <!-- Git Mainlining -->
-  <remote  name="cherish-gitea"
-           fetch="https://gitea.com/CherishOS"
+  <!-- Codeberg -->
+  <remote  name="cherish-codeberg"
+           fetch="https://codeberg.org/CherishOS"
            revision="refs/heads/sixteen" />
 
   <!-- Rootdir -->
@@ -107,7 +107,7 @@
   <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="cherish" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherish"  />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="cherish" />
-  <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="cherish-gitea" /> 
+  <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="cherish-codeberg" /> 
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="cherish" />
   <!-- <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="cherish" /> -->
   <!-- <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cherish"  /> -->
@@ -122,7 +122,7 @@
   <!-- Packages (Modules) -->
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="cherish"  />
   <!-- <project path="packages/modules/Bluetooth/android/BtHelper" name="android_packages_modules_Bluetooth_android_BtHelper" remote="cherish" /> -->
-  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="cherish-gitea" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="cherish-codeberg" />
   <project path="packages/modules/IntentResolver" name="android_packages_modules_IntentResolver" remote="cherish" />
   <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="cherish" />
   <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="cherish"  />
@@ -155,7 +155,7 @@
   <project path="vendor/support" name="android_vendor_support" remote="cherish" />
   <project path="vendor/themes" name="android_vendor_themes" remote="cherish"  />
   <!-- <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="cherish" /> -->
-  <project path="vendor/gms" name="android_vendor_gms" remote="cherish-gitea" clone-depth="1" />
+  <project path="vendor/gms" name="android_vendor_gms" remote="cherish-codeberg" clone-depth="1" />
   <project path="vendor/pixel-style" name="android_vendor_pixel-style" remote="cherish" />
   <project path="vendor/OTA" name="OTA" remote="cherish-devices" />
 </manifest>
