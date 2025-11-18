@@ -12,6 +12,17 @@
   <remote  name="cherish"
            fetch="https://github.com/CherishOS"
            revision="refs/heads/sixteen" />
+
+  <remote  name="evo"
+           fetch="https://github.com/Evolution-X"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/bka" />
+
+ <!-- GitHub QPR1-->
+<remote  name="cherish-qpr1"
+           fetch="https://github.com/CherishOS"
+           revision="refs/heads/sixteen-qpr1" />
 	
   <!-- GitHub -->
   <remote  name="cherish-devices"
@@ -26,25 +37,25 @@
   <!-- Codeberg -->
   <remote  name="cherish-codeberg"
            fetch="https://codeberg.org/CherishOS"
-           revision="refs/heads/sixteen" />
+           revision="refs/heads/sixteen-qpr1" />
+
+  <remote  name="evo-codeberg"
+           fetch="https://codeberg.org/Evolution-X"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/bka" />
 
   <!-- Rootdir -->
-  <project path="art" name="android_art" remote="cherish"  />
-  <project path="bionic" name="android_bionic" remote="cherish"  />
-  <project path="manifest" name="android_manifest" remote="cherish"  />
+  <project path="art" name="android_art" revision="sixteen-qpr1" remote="cherish"  />
+  <project path="bionic" name="android_bionic" revision="sixteen-qpr1" remote="cherish"  />
+  <project path="manifest" name="android_manifest" revision="sixteen-qpr1" remote="cherish"  />
 
   <!-- Bootable -->
-  <project path="bootable/deprecated-ota" name="android_bootable_deprecated-ota" groups="pdk-cw" remote="cherish" />
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="cherish"  />
+  <project path="bootable/deprecated-ota" name="android_bootable_deprecated-ota" groups="pdk-cw" revision="sixteen-qpr1" remote="cherish" />
+  <project path="bootable/recovery" name="android_bootable_recovery" revision="sixteen-qpr1" remote="cherish"  />
   
   <!-- Build -->
-  <project path="build/bazel" name="android_build_bazel" groups="pdk" remote="cherish" >
-    <linkfile src="bazel.WORKSPACE" dest="WORKSPACE" />
-    <linkfile src="bazel.BUILD" dest="BUILD" />
-  </project>
-
-  <!-- Build -->
-  <project path="build/make" name="android_build" groups="pdk,sysui-studio" remote="cherish" >
+  <project path="build/make" name="android_build" groups="pdk,sysui-studio" revision="sixteen-qpr1" remote="cherish" >
     <copyfile dest="Makefile" src="core/root.mk" />
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
@@ -53,7 +64,7 @@
     <linkfile dest="build/target" src="target" />
     <linkfile dest="build/tools" src="tools" />
   </project>
-  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="cherish" >
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" revision="sixteen-qpr1" remote="cherish" >
     <linkfile dest="Android.bp" src="root.bp" />
     <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
   </project>
@@ -66,97 +77,97 @@
   <project path="external/ant-wireless/ant_client" name="android_external_ant-wireless_ant_client" groups="qcom" remote="cherish" />
   <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" groups="qcom" remote="cherish" />
   <!-- External -->
-  <project path="external/bouncycastle" name="android_external_bouncycastle" remote="cherish" />
-  <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="cherish" />
-  <project path="external/FadingEdgeLayout" name="android_external_FadingEdgeLayout" remote="cherish" />
-  <project path="external/gptfdisk" name="android_external_gptfdisk" groups="pdk" remote="cherish" />
-  <project path="external/libncurses" name="android_external_libncurses" remote="cherish" />
-  <project path="external/mksh" name="android_external_mksh" groups="pdk" remote="cherish" />
-  <project path="external/piex" name="android_external_piex" groups="pdk" remote="cherish" />
-  <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="cherish" />
-  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="cherish"  />
+  <project path="external/bouncycastle" name="android_external_bouncycastle" revision="sixteen-qpr1" remote="cherish" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" revision="sixteen-qpr1" remote="cherish" />
+  <!-- <project path="external/FadingEdgeLayout" name="android_external_FadingEdgeLayout" remote="cherish" /> -->
+  <project path="external/gptfdisk" name="android_external_gptfdisk" groups="pdk" revision="sixteen-qpr1" remote="cherish" />
+  <project path="external/mksh" name="android_external_mksh" groups="pdk" revision="sixteen-qpr1" remote="cherish" />
+  <project path="external/piex" name="android_external_piex" groups="pdk" revision="sixteen-qpr1" remote="cherish" />
+  <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" revision="sixteen-qpr1" remote="cherish" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" revision="sixteen-qpr1" remote="cherish"  />
 
   <!-- Frameworks -->
-  <project path="frameworks/av" name="android_frameworks_av"  remote="cherish" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="cherish"  />
-  <project path="frameworks/native" name="android_frameworks_native" remote="cherish"  />
-  <!-- <project path="frameworks/libs/net" name="android_frameworks_libs_net" remote="cherish" /> -->
-  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="cherish" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="cherish"  />
-  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="cherish" />
+  <project path="frameworks/av" name="android_frameworks_av" revision="sixteen-qpr1" remote="cherish" />
+  <project path="frameworks/base" name="platform_frameworks_base" revision="sixteen-qpr1" remote="cherish"  />
+  <project path="frameworks/native" name="android_frameworks_native" revision="sixteen-qpr1" remote="cherish"  />
+  <!-- <project path="frameworks/libs/net" name="android_frameworks_libs_net" revision="sixteen-qpr1" remote="cherish" /> -->
+  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" revision="sixteen-qpr1" remote="cherish" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" revision="sixteen-qpr1" remote="cherish"  />
+  <!-- <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="cherish" /> -->
 
   <!-- Kernel -->
-  <project path="kernel/configs" name="android_kernel_configs" groups="vts,pdk" remote="cherish" />
-
-  <!-- Hardware -->
-  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="cherish" />
-  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="cherish"  />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="cherish"  />
-  <project path="hardware/cherish/interfaces" name="android_hardware_cherish_interfaces" remote="cherish" />
-  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="cherish" />
-  <project path="hardware/google/pixel" name="android_hardware_google_pixel" remote="cherish"/>
+  <project path="kernel/configs" name="android_kernel_configs" groups="vts,pdk" revision="sixteen-qpr1" remote="cherish" />
 
   <!-- LineageOS additions -->
-  <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="cherish" />
+  <project path="lineage-sdk" name="android_cherish-sdk" remote="cherish" revision="sixteen-qpr1" />
+
+  <!-- Hardware -->
+  <!-- <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="cherish" /> -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" revision="sixteen-qpr1" remote="cherish"  />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" revision="sixteen-qpr1" remote="cherish"  />
+  <!-- <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="cherish" /> -->
+  <project path="hardware/google/pixel" name="android_hardware_google_pixel" revision="sixteen-qpr1" remote="cherish"/>
 
   <!-- Packages -->
+  <project path="packages/apps/BtHelper" name="android_packages_apps_BtHelper" revision="sixteen-qpr1" remote="cherish" /> 
   <!--project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="cherish" /-->
-  <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" remote="cherish"  />
+  <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" revision="sixteen-qpr1" remote="cherish"  />
   <!-- <project path="packages/apps/DesktopMode" name="LMODroid/platform_packages_apps_DesktopMode" groups="pdk-fs" revision="thirteen" remote="github" />-->
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="cherish" />
+  <!-- <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="cherish" />
   <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="cherish" />
-  <project path="packages/apps/LMOFreeform" name="android_packages_apps_LMOFreeform" remote="cherish" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherish"  />
-  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="cherish" />
-  <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="cherish-codeberg" /> 
-  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="cherish" />
+  <project path="packages/apps/LMOFreeform" name="android_packages_apps_LMOFreeform" remote="cherish" /> -->
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" revision="sixteen-qpr1" remote="cherish"  />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" revision="sixteen-qpr1" remote="cherish" />
+  <!-- <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="cherish-codeberg" /> 
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="cherish" /> -->
   <!-- <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="cherish" /> -->
   <!-- <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cherish"  /> -->
-  <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="cherish" />
-  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="cherish" />
+  <!-- <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="cherish" />
+  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="cherish" /> -->
   <!-- <project path="packages/apps/ParallelSpace" name="android_packages_apps_ParallelSpace" remote="cherish" />
   <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" /> -->
-  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="cherish" />
+  <!-- <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="cherish" /> -->
   <!-- <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="cherish" /> -->
-  <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="cherish" />
+  <!-- <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="cherish" /> -->
 
   <!-- Packages (Modules) -->
-  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="cherish"  />
-  <!-- <project path="packages/modules/Bluetooth/android/BtHelper" name="android_packages_modules_Bluetooth_android_BtHelper" remote="cherish" /> -->
-  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="cherish-codeberg" />
-  <project path="packages/modules/IntentResolver" name="android_packages_modules_IntentResolver" remote="cherish" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" revision="sixteen-qpr1" remote="cherish"  />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" revision="sixteen-qpr1" remote="cherish-codeberg" />
+  <!-- <project path="packages/modules/IntentResolver" name="android_packages_modules_IntentResolver" remote="cherish" />
   <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="cherish" />
-  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="cherish"  />
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="cherish"  /> -->
 
   <!-- Packages (services) -->
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="cherish"  />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="cherish"  />
-  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="cherish"  />
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="cherish"  />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" revision="sixteen-qpr1" remote="cherish"  />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" revision="sixteen-qpr1" remote="cherish"  />
+  <!-- <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="cherish"  />-->
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" revision="sixteen-qpr1" remote="cherish"  /> 
  
   <!-- System -->
-  <project path="system/core" name="android_system_core" remote="cherish"  />
-  <project path="system/bpf" name="android_system_bpf" remote="cherish"  />
-  <project path="system/extras" name="android_system_extras" remote="cherish"  />
-  <project path="system/libhidl" name="android_system_libhidl" remote="cherish"  />
-  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="cherish"  />
-  <project path="system/logging" name="android_system_logging" groups="pdk" remote="cherish" />
-  <project path="system/media" name="android_system_media" remote="cherish"  />
-  <project path="system/netd" name="android_system_netd" remote="cherish"  />
-  <project path="system/security" name="android_system_security" remote="cherish"  />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="cherish"  />
-  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="cherish"  />
-  <project path="system/update_engine" name="android_system_update_engine" remote="cherish"  />
-  <project path="system/vold" name="android_system_vold" remote="cherish"  />
+  <project path="system/chre" name="android_system_chre" groups="pdk" revision="sixteen-qpr1" remote="cherish" />
+  <project path="system/core" name="android_system_core" revision="sixteen-qpr1" remote="cherish"  />
+  <project path="system/bpf" name="android_system_bpf" revision="sixteen-qpr1" remote="cherish"  />
+  <project path="system/libhwbinder" name="android_system_libhwbinder" revision="sixteen-qpr1" remote="cherish"  />
+  <project path="system/media" name="android_system_media" revision="sixteen-qpr1" remote="cherish"  />
+  <project path="system/security" name="android_system_security" revision="sixteen-qpr1" remote="cherish"  />
+  <project path="system/sepolicy" name="android_system_sepolicy" revision="sixteen-qpr1" remote="cherish"  />
+  <project path="system/update_engine" name="android_system_update_engine" revision="sixteen-qpr1" remote="cherish"  />
+  <project path="system/vold" name="android_system_vold" revision="sixteen-qpr1" remote="cherish"  />
 
   <!-- Vendor -->
-  <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish"  />
-  <project path="vendor/google/overlays/ThemeIcons" name="android_vendor_google_overlays_ThemeIcons" remote="cherish" />
-  <project path="vendor/lineage_compat" name="android_vendor_lineage_compat" remote="cherish" />
-  <project path="vendor/support" name="android_vendor_support" remote="cherish" />
-  <project path="vendor/themes" name="android_vendor_themes" remote="cherish"  />
-  <!-- <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="cherish" /> -->
-  <project path="vendor/gms" name="android_vendor_gms" remote="cherish-codeberg" clone-depth="1" />
+  <project path="vendor/cherish" name="android_vendor_cherish" revision="sixteen-qpr1" remote="cherish"  />
+  <project path="vendor/google/overlays/ThemeIcons" name="android_vendor_google_overlays_ThemeIcons" revision="sixteen-qpr1" remote="cherish" />
+  <project path="vendor/support" name="android_vendor_support" revision="sixteen-qpr1" remote="cherish" />
+  <project path="vendor/themes" name="android_vendor_themes" revision="sixteen-qpr1" remote="cherish"  />
+  <!-- <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" revision="sixteen-qpr1" remote="cherish" /> -->
+  <project path="vendor/gms" name="vendor_gms" remote="evo-codeberg" clone-depth="1" />
   <project path="vendor/pixel-style" name="android_vendor_pixel-style" remote="cherish" />
   <project path="vendor/OTA" name="OTA" remote="cherish-devices" />
+
+  <!-- CodeLinaro additions -->
+  <project path="device/qcom/sepolicy_vndr/sm8450" name="device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" remote="evo" revision="bq1-sm8450" />
+  <project path="device/qcom/sepolicy_vndr/sm8550" name="device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" remote="evo" revision="bq1-sm8550" />
+  <project path="device/qcom/sepolicy_vndr/sm8650" name="device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" remote="evo" revision="bq1-sm8650" />
+  <project path="device/qcom/sepolicy_vndr/sm8750" name="device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" remote="evo" revision="bq1-sm8750" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" remote="cherish" revision="sixteen-qpr1" />
 </manifest>
